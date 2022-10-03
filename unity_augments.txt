@@ -1,0 +1,1529 @@
+<noinclude>{{disambiguation|Unity Weapons|Unity Accessories}}{{:Category:Unity Rewards}}</noinclude>
+===Item level 119 Heads===
+{| align="center"
+|
+{{Unity Armor Table
+|Unity Armor Row=
+{{Unity Armor Row
+|Name=Adorned Helm +1
+|Materials=Beist's Blood
+|Materials_Number=50
+|Level=125
+|NM=Beist
+|Aug1=Accuracy & Magic Accuracy +45
+|Aug2=Attack +50
+|Aug3=All Base Stats +10
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Alhazen Hat +1
+|Materials=Azrael's Eye
+|Materials_Number=50
+|Level=128
+|NM=Azrael
+|Aug1=All Base Stats +30
+|Aug2=Evasion +50
+|Aug3=Accuracy, Ranged Accuracy, & Magic Accuracy +25
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Blistering Sallet +1
+|Materials=Vermillion's Wing
+|Materials_Number=50
+|Level=125
+|NM=Vermillion Fishfly
+|Aug1=Accuracy & Magic Accuracy +45
+|Aug2=Critical Hit Rate +10%
+|Aug3=STR/DEX +25
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Hike Khat +1
+|Materials=Ayapec's Shell
+|Materials_Number=50
+|Level=125
+|NM=Ayapec
+|Aug1=Physical Damage Taken -10%
+|Aug2=Pet: Damage Taken -5%
+|Aug3=All Base Stats +10
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Imp. Wing Hair. +1
+|namebreak=y
+|Materials=Valkurm Imperator's Wing
+|Materials_Number=50
+|Level=119
+|NM=Valkurm Imperator
+|Aug1=Accuracy +35
+|Aug2=Magic Evasion +100
+|Aug3=Critical Hit Rate +10%
+|Lustreless=Scale
+}}
+{{Unity Armor Row 
+|Name=Loess Barbuta +1
+|Materials=Hidhaegg's Scale
+|Materials_Number=50
+|Level=135
+|NM=Hidhaegg
+|Aug1=Enmity +10
+|Aug2=Damage taken -10%
+|Aug3=All Attr. +10
+|Lustreless=Wing
+}}
+{{Unity Armor Row
+|Name=Stinger Helm +1
+|Materials=Uropygid's Needle
+|Materials_Number=50
+|Level=125
+|NM=King Uropygid
+|Aug1=Accuracy & Magic Accuracy +30
+|Aug2=Physical Damage Limit +5%
+|Aug3=All Base Stats +10
+|Lustreless=Hide
+}}
+}}
+|}
+
+===Item level 119 Bodies===
+{| align="center"
+|
+{{Unity Armor Table
+|Unity Armor Row=
+{{Unity Armor Row
+|Name=Agony Jerkin +1
+|Materials=Voso's Hide
+|Materials_Number=50
+|Level=122
+|NM=Voso
+|Aug1=Attack +60
+|Aug2="Store TP" +10
+|Aug3=All Base Stats +10
+|Lustreless=Scale
+}}
+{{Unity Armor Row
+|Name=Cohort Cloak +1
+|Materials=Centurio's Armor
+|Materials_Number=50
+|Level=125
+|NM=Centurio XX-I
+|Aug1=Magic Accuracy +100
+|Aug2=Magic Attack Bonus +100
+|Aug3=All Base Stats +20
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Emet Harness +1
+|Materials=Largantua's Shard
+|Materials_Number=50
+|Level=125
+|NM=Largantua
+|Aug1=Evasion +30
+|Aug2=Accuracy +40
+|Aug3=All Base Stats +10
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Hime Domaru +1
+|Materials=Beist's Blood
+|Materials_Number=50
+|Level=125
+|NM=Beist
+|Aug1=Accuracy +45
+|Aug2="Double Attack" +5%
+|Aug3=All Base Stats +10
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Lugra Cloak +1
+|Materials=Tiyanak's Fang
+|Materials_Number=50
+|Level=122
+|NM=Tiyanak
+|Aug1=Magic Accuracy +60
+|Aug2=Spell Interruption Rate -20%
+|Aug3=All Base Stats +20
+|Lustreless=Scale
+}}
+{{Unity Armor Row 
+|Name=Obviat. Cuirass +1
+|namebreak=y
+|Materials=Tolba's Shell
+|Materials_Number=50
+|Level=135
+|NM=Tolba
+|Aug1=Mag. Evasion+60
+|Aug2=Enmity+5
+|Aug3=All Attr. +10
+|Lustreless=Wing
+}}
+{{Unity Armor Row
+|Name=Ros. Jaseran +1
+|Materials=Mender's Log
+|Materials_Number=50
+|Level=122
+|NM=Woodland Mender
+|Aug1=Magic Accuracy +45
+|Aug2=Damage Taken -5%
+|Aug3=All Base Stats +10
+|Lustreless=Scale
+}}
+{{Unity Armor Row
+|Name=Shomonjijoe +1
+|Materials=Douma's Shard
+|Materials_Number=50
+|Level=125
+|NM=Douma Weapon
+|Aug1=Avatar: TP Bonus +300
+|Aug2=Avatar: Accuracy & Magic Accuracy +30
+|Aug3=Avatar: All Base Stats +10
+|Lustreless=Hide
+}}
+{{Unity Armor Row 
+|Name=Tatena. Harama. +1
+|namebreak=y
+|Materials=Tumult's Blood
+|Materials_Number=50
+|Level=145
+|NM=Tumult Curator
+|Aug1=Accuracy+30
+|Aug2=All Attr.+10
+|Aug3="Triple Attack" +5%
+|Lustreless=Wing
+}}
+}}
+|}
+
+===Item level 119 Hands===
+{| align="center"
+|
+{{Unity Armor Table
+|Unity Armor Row=
+{{Unity Armor Row
+|Name=Asteria Mitts +1
+|Materials=Clawberry's Coat
+|Materials_Number=50
+|Level=125
+|NM=Azure-toothed Clawberry
+|Aug1=MP +45
+|Aug2=Avatar: Accuracy & Magic Accuracy +40
+|Aug3=Avatar: Magic Burst Bonus +10%
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Gazu Bracelet +1
+|Materials=Celine's Vine
+|Materials_Number=50
+|Level=128
+|NM=Carousing Celine
+|Aug1=Accuracy +50
+|Aug2=Haste +10%
+|Aug3=All Base Stats +10
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Kachi. Kote +1
+|namebreak=y
+|Materials=Muut's Vestment
+|Materials_Number=50
+|Level=125
+|NM=Muut
+|Aug1=Attack +45
+|Aug2=Accuracy & Magic Accuracy +30
+|Aug3=All Base Stats +10
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Lamassu Mitts +1
+|Materials=Clawberry's Coat
+|Materials_Number=50
+|Level=125
+|NM=Azure-toothed Clawberry
+|Aug1=Avatar: All Base Stats +30
+|Aug2=Avatar: Accuracy & Magic Accuracy +40
+|Aug3=Avatar Perpetuation Cost -5
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Macabre Gaunt. +1
+|namebreak=y
+|Materials=Abyssdiver's Feather
+|Materials_Number=50
+|Level=119
+|NM=Abyssdiver
+|Aug1=Magic Evasion +75
+|Aug2=Occasionally Resist Status Ailments +10
+|Aug3=All Base Stats +10
+|Lustreless=Scale
+}}
+{{Unity Armor Row
+|Name=Shigure Tekko +1
+|Materials=Warblade Beak's Hide
+|Materials_Number=50
+|Level=122
+|NM=Warblade Beak
+|Aug1=Evasion +90
+|Aug2=Magic Evasion +80
+|Aug3=All Base Stats +10
+|Lustreless=Scale
+}}
+{{Unity Armor Row 
+|Name=Tatena. Gote +1
+|Materials=Shedu's Mane
+|Materials_Number=50
+|Level=135
+|NM=Shedu
+|Aug1=Accuracy+40
+|Aug2=All Attr.+10
+|Aug3="Triple Attack" +4%
+|Lustreless=Wing
+}}
+}}
+|}
+
+===Item level 119 Legs===
+{| align="center"
+|
+{{Unity Armor Table
+|Unity Armor Row=
+{{Unity Armor Row
+|Name=Assid. Pants +1
+|Materials=Intuila's Hide
+|Materials_Number=50
+|Level=119
+|NM=Intuila
+|Aug1=Avatar: Accuracy & Magic Accuracy +35
+|Aug2=Avatar: All Base Stats +20
+|Aug3=MP +20
+|Lustreless=Scale
+}}
+{{Unity Armor Row
+|Name=Augury Cuisses +1
+|Materials=Emperor Arthro's Shell
+|Materials_Number=50
+|Level=122
+|NM=Emperor Arthro
+|Aug1=Attack +60
+|Aug2=Magic Attack Bonus +30
+|Aug3=All Base Stats +10
+|Lustreless=Scale
+}}
+{{Unity Armor Row 
+|Name=Tatena. Haidate +1
+|namebreak=y
+|Materials=Sarama's Hide
+|Materials_Number=50
+|Level=135
+|NM=Sarama
+|Aug1=Accuracy+60
+|Aug2=All Attr.+10
+|Aug3="Triple Attack" +3%
+|Lustreless=Wing
+}}
+{{Unity Armor Row
+|Name=Zoar Subligar +1
+|Materials=Heiligtum's Moss
+|Materials_Number=50
+|Level=122
+|NM=Keeper of Heiligtum
+|Aug1=Accuracy +30
+|Aug2=Critical Hit Rate +5%
+|Aug3=All Base Stats +10
+|Lustreless=Scale
+}}
+}}
+|}
+
+===Item level 119 Feet===
+{| align="center"
+|
+{{Unity Armor Table
+|Unity Armor Row=
+{{Unity Armor Row
+|Name=Hippo. Socks +1
+|namebreak=y
+|Materials=Immanibugard's Hide
+|Materials_Number=50
+|Level=119
+|NM=Immanibugard
+|Aug1="Resist Bind" +45
+|Aug2=Evasion +20
+|Aug3=All Base Stats +10
+|Lustreless=Scale
+}}
+{{Unity Armor Row
+|Name=Hygieia Clogs +1
+|Materials=Tuft Of Camahueto's Fur
+|Materials_Number=50
+|Level=128
+|NM=Camahueto
+|Aug1="Cure" Potency +15%
+|Aug2=Healing Magic Skill +10
+|Aug3=All Base Stats +10
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Jute Boots +1
+|Materials=Strix's Tailfeather
+|Materials_Number=50
+|Level=125
+|NM=Strix
+|Aug1=DEX/AGI +15
+|Aug2=Magic Evasion +30
+|Aug3=All Base Stats +10
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Regal Pumps +1
+|Materials=Valkurm Imperator's Wing
+|Materials_Number=50
+|Level=119
+|NM=Valkurm Imperator
+|Aug1=Healing Magic Skill +10
+|Aug2=Enhancing Magic Skill +10
+|Aug3=All Base Stats +10
+|Lustreless=Scale
+}}
+{{Unity Armor Row 
+|Name=Tatena. Sune. +1
+|namebreak=y
+|Materials=Thu'ban's Scale
+|Materials_Number=50
+|Level=135
+|NM=Thu'ban
+|Aug1=Accuracy+60
+|Aug2=All Attr.+10
+|Aug3="Triple Attack" +3%
+|Lustreless=Wing
+}}
+}}
+|}
+
+===Level 98 and Lower Equipment===
+{| align="center"
+|
+{{Scrub Unity Armor Table
+|Unity Armor Row=
+{{Scrub Unity Armor Row
+|Name=Adsilio Boots +1
+|Materials=Bounding Belinda's Hide
+|Materials_Number=3
+|Accolades=1,000
+|NM=Bounding Belinda
+|Slot=Feet
+|Aug1={{question}}
+|Aug2={{question}}
+|Aug3={{question}}
+}}
+{{Scrub Unity Armor Row
+|Name=Dew Silk Cape +1
+|Materials=Prickly Pitriv's Thread
+|Materials_Number=3
+|Accolades=1,000
+|NM=Prickly Pitriv
+|Slot=Back
+|Aug1={{question}}
+|Aug2={{question}}
+|Aug3={{question}}
+}}
+{{Scrub Unity Armor Row
+|Name=Aurore Beret +1
+|Materials=Bounding Belinda's Hide
+|Materials_Number=3
+|Accolades=1,000
+|NM=Bounding Belinda
+|Slot=Head
+|Aug1={{question}}
+|Aug2={{question}}
+|Aug3={{question}}
+}}
+{{Scrub Unity Armor Row
+|Name=Aurore Doublet +1
+|Materials=Bounding Belinda's Hide
+|Materials_Number=3
+|Accolades=1,000
+|NM=Bounding Belinda
+|Slot=Body
+|Aug1={{question}}
+|Aug2={{question}}
+|Aug3={{question}}
+}}
+{{Scrub Unity Armor Row
+|Name=Aurore Gloves +1
+|Materials=Bounding Belinda's Hide
+|Materials_Number=3
+|Accolades=1,000
+|NM=Bounding Belinda
+|Slot=Hands
+|Aug1={{question}}
+|Aug2={{question}}
+|Aug3={{question}}
+}}
+{{Scrub Unity Armor Row
+|Name=Aurore Brais +1
+|Materials=Bounding Belinda's Hide
+|Materials_Number=3
+|Accolades=1,000
+|NM=Bounding Belinda
+|Slot=Legs
+|Aug1={{question}}
+|Aug2={{question}}
+|Aug3={{question}}
+}}
+{{Scrub Unity Armor Row
+|Name=Aurore Gaiters +1
+|Materials=Bounding Belinda's Hide
+|Materials_Number=3
+|Accolades=1,000
+|NM=Bounding Belinda
+|Slot=Feet
+|Aug1={{question}}
+|Aug2={{question}}
+|Aug3={{question}}
+}}
+{{Scrub Unity Armor Row
+|Name=Perle Salade +1
+|Materials=Harold's Ore{{!}}Chunk of Harold Hugemaw's red ore
+|Materials_Number=3
+|Accolades=1,000
+|NM=Hugemaw Harold
+|Slot=Head
+|Aug1={{question}}
+|Aug2={{question}}
+|Aug3={{question}}
+}}
+{{Scrub Unity Armor Row
+|Name=Perle Hauberk +1
+|Materials=Harold's Ore{{!}}Chunk of Harold Hugemaw's red ore
+|Materials_Number=3
+|Accolades=1,000
+|NM=Hugemaw Harold
+|Slot=Body
+|Aug1={{question}}
+|Aug2={{question}}
+|Aug3={{question}}
+}}
+{{Scrub Unity Armor Row
+|Name=Perle Moufles +1
+|Materials=Harold's Ore{{!}}Chunk of Harold Hugemaw's red ore
+|Materials_Number=3
+|Accolades=1,000
+|NM=Hugemaw Harold
+|Slot=Hands
+|Aug1={{question}}
+|Aug2={{question}}
+|Aug3={{question}}
+}}
+{{Scrub Unity Armor Row
+|Name=Perle Brayettes +1
+|Materials=Harold's Ore{{!}}Chunk of Harold Hugemaw's red ore
+|Materials_Number=3
+|Accolades=1,000
+|NM=Hugemaw Harold
+|Slot=Legs
+|Aug1={{question}}
+|Aug2={{question}}
+|Aug3={{question}}
+}}
+{{Scrub Unity Armor Row
+|Name=Perle Solerets +1
+|Materials=Harold's Ore{{!}}Chunk of Harold Hugemaw's red ore
+|Materials_Number=3
+|Accolades=1,000
+|NM=Hugemaw Harold
+|Slot=Feet
+|Aug1={{question}}
+|Aug2={{question}}
+|Aug3={{question}}
+}}
+{{Scrub Unity Armor Row
+|Name=Teal Chapeau +1
+|Materials=Prickly Pitriv's Thread
+|Materials_Number=3
+|Accolades=1,000
+|NM=Prickly Pitriv
+|Slot=Head
+|Aug1={{question}}
+|Aug2={{question}}
+|Aug3={{question}}
+}}
+{{Scrub Unity Armor Row
+|Name=Teal Saio +1
+|Materials=Prickly Pitriv's Thread
+|Materials_Number=3
+|Accolades=1,000
+|NM=Prickly Pitriv
+|Slot=Body
+|Aug1={{question}}
+|Aug2={{question}}
+|Aug3={{question}}
+}}
+{{Scrub Unity Armor Row
+|Name=Teal Cuffs +1
+|Materials=Prickly Pitriv's Thread
+|Materials_Number=3
+|Accolades=1,000
+|NM=Prickly Pitriv
+|Slot=Hands
+|Aug1={{question}}
+|Aug2={{question}}
+|Aug3={{question}}
+}}
+{{Scrub Unity Armor Row
+|Name=Teal Slops +1
+|Materials=Prickly Pitriv's Thread
+|Materials_Number=3
+|Accolades=1,000
+|NM=Prickly Pitriv
+|Slot=Legs
+|Aug1={{question}}
+|Aug2={{question}}
+|Aug3={{question}}
+}}
+{{Scrub Unity Armor Row
+|Name=Teal Pigaches +1
+|Materials=Prickly Pitriv's Thread
+|Materials_Number=3
+|Accolades=1,000
+|NM=Prickly Pitriv
+|Slot=Feet
+|Aug1={{question}}
+|Aug2={{question}}
+|Aug3={{question}}
+}}
+}}
+|}
+<noinclude>[[Category:Unity Concord]][[Category:Unity Rewards]]</noinclude>
+
+
+<noinclude>{{disambiguation|Unity Armor|Unity Accessories}}{{:Category:Unity Rewards}}</noinclude>
+===Melee===
+{| align="center"
+|
+{{Unity Armor Table
+|Unity Armor Row=
+{{Unity Armor Row
+|Name=Aizkora +1
+|Materials=Azrael's Eye
+|Materials_Number=50
+|Level=128
+|NM=Azrael
+|Aug1=Accuracy & Magic Accuracy +45
+|Aug2="Triple Attack" +3%
+|Aug3="Quadruple Attack" +3%
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Anathema Harpe +1
+|Materials=Muut's Vestment
+|Materials_Number=50
+|Level=125
+|NM=Muut
+|Aug1=DMG +20
+|Aug2=Accuracy & Magic Accuracy +40
+|Aug3=Critical Hit Rate +10%
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Beheader +1
+|Materials=Ethereal Incense
+|Materials_Number=50
+|Level=128
+|NM=Borealis Shadow
+|Aug1=DMG +53
+|Aug2=Accuracy & Magic Accuracy +40
+|Aug3=Haste +10%
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Buramgh +1
+|Materials=Jester Malatrix's Shard
+|Materials_Number=50
+|Level=119
+|NM=Jester Malatrix
+|Aug1=DMG +30
+|Aug2=Pet: Accuracy & Magic Accuracy +30
+|Aug3=Accuracy & Magic Accuracy +35
+|Lustreless=Scale
+}}
+{{Unity Armor Row 
+|Name=Combuster +1
+|Materials=Hidhaegg's Scale
+|Materials_Number=50
+|Level=135
+|NM=Hidhaegg
+|Aug1=DMG:+19
+|Aug2=Accuracy & Mag. Accuracy +40
+|Aug3= "Store TP"+10
+|Lustreless=Wing
+}}
+{{Unity Armor Row 
+|Name=Comeuppances +1
+|Materials=Tumult's Blood
+|Materials_Number=50
+|Level=145
+|NM=Tumult Curator
+|Aug1=DEX+20
+|Aug2=Accuracy & Mag. Accuracy +40
+|Aug3="Store TP"+10
+|Aug4=Pet: Accuracy & Mag. Accuracy +40
+|Lustreless=Wing
+}}
+{{Unity Armor Row
+|Name=Demers. Degen +1
+|Materials=Bakunawa's Ink
+|Materials_Number=50
+|Level=125
+|NM=Bakunawa
+|Aug1=Accuracy & Magic Accuracy +45
+|Aug2=DEX +10
+|Aug3=Sword Enhancement Spell Damage +50%
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Emeici +1
+|Materials=Jar Of Garbage Gel's Mucus
+|Materials_Number=50
+|Level=122
+|NM=Garbage Gel
+|Aug1=DMG +30
+|Aug2=Accuracy & Magic Accuracy +30
+|Aug3=Critical Hit Rate +10%
+|Lustreless=Scale
+}}
+{{Unity Armor Row
+|Name=Fists of Fury +1
+|Materials=Ethereal Incense
+|Materials_Number=50
+|Level=128
+|NM=Borealis Shadow
+|Aug1=DMG +14
+|Aug2=Accuracy & Magic Accuracy +40
+|Aug3="Regen" +5
+|Lustreless=Hide
+}}
+{{Unity Armor Row 
+|Name=Flyssa +1
+|Materials=Shedu's Mane
+|Materials_Number=50
+|Level=135
+|NM=Shedu
+|Aug1=DMG:+10
+|Aug2=Accuracy & Mag. Accuracy +40
+|Aug3=Damage taken -5%
+|Lustreless=Wing
+}}
+{{Unity Armor Row
+|Name=Gae Derg +1
+|Materials=Coca's Wing
+|Materials_Number=50
+|Level=125
+|NM=Coca
+|Aug1=DMG +62
+|Aug2=Accuracy & Magic Accuracy +40
+|Aug3="Store TP" +8
+|Lustreless=Hide
+}}
+{{Unity Armor Row 
+|Name=Habilitator +1
+|Materials=Thu'ban's Scale
+|Materials_Number=50
+|Level=135
+|NM=Thu'ban
+|Aug1=DMG:+21
+|Aug2=Accuracy & Mag. Accuracy +40
+|Aug3=STR/DEX/CHR+10
+|Aug4=Pet: Accuracy & Mag. Accuracy +40
+|Lustreless=Wing
+}}
+{{Unity Armor Row
+|Name=Jugo Kukri +1
+|Materials=Vedrfolnir's Wing
+|Materials_Number=50
+|Level=128
+|NM=Vedrfolnir
+|Aug1=DMG +13
+|Aug2=Accuracy & Magic Accuracy +40
+|Aug3=Evasion +20
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Kladenets +1
+|Materials=Specter's Ore
+|Materials_Number=50
+|Level=125
+|NM=Specter Worm
+|Aug1=DMG +50
+|Aug2=Accuracy & Magic Accuracy +40
+|Aug3="Fast Cast" +10%
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Kunimune +1
+|Materials=Heiligtum's Moss
+|Materials_Number=50
+|Level=122
+|NM=Keeper of Heiligtum
+|Aug1=TP Bonus +500
+|Aug2=Accuracy & Magic Accuracy +30
+|Aug3=STR +10
+|Lustreless=Scale
+}}
+{{Unity Armor Row
+|Name=Kustawi +1
+|Materials=Glazemane's Fang
+|Materials_Number=50
+|Level=128
+|NM=Glazemane
+|Aug1=Ranged Attack +20
+|Aug2=Ranged Accuracy & Magic Accuracy +40
+|Aug3=Enmity -5
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Loxotic Mace +1
+|Materials=G. Grenade's Ash
+|Materials_Number=50
+|Level=128
+|NM=Grand Grenade
+|Aug1=DMG +33
+|Aug2=Accuracy & Magic Accuracy +40
+|Aug3=Weapon Skill Damage +10%
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Mdomo Axe +1
+|Materials=Mhuufya's Beak
+|Materials_Number=50
+|Level=125
+|NM=Kubool Ja's Mhuufya
+|Aug1=DMG +24
+|Aug2=Accuracy & Magic Accuracy +40
+|Aug3=Pet: Accuracy & Magic Accuracy +50
+|Lustreless=Hide
+}}
+{{Unity Armor Row 
+|Name=Montante +1
+|Materials=Sarama's Hide
+|Materials_Number=50
+|Level=135
+|NM=Sarama
+|Aug1=DMG:+20
+|Aug2= Accuracy & Mag. Accuracy +40
+|Aug3=HP+100
+|Lustreless=Wing
+}}
+{{Unity Armor Row
+|Name=Norifusa +1
+|Materials=V. Cluster's Ash
+|Materials_Number=50
+|Level=128
+|NM=Volatile Cluster
+|Aug1=DMG +10
+|Aug2=Accuracy & Magic Accuracy +40
+|Aug3=Skillchain Damage +20%
+|Lustreless=Hide
+}}
+{{Unity Armor Row 
+|Name=Nullis +1
+|Materials=Hidhaegg's Scale
+|Materials_Number=50
+|Level=135
+|NM=Hidhaegg
+|Aug1=DMG:+33
+|Aug2=Accuracy & Mag. Accuracy +40
+|Aug3=Dark magic skill +10
+|Lustreless=Wing
+}}
+{{Unity Armor Row
+|Name=Perun +1
+|Materials=Ayapec's Shell
+|Materials_Number=50
+|Level=125
+|NM=Ayapec
+|Aug1=Ranged Attack +45
+|Aug2=Ranged Accuracy & Magic Accuracy +30
+|Aug3="Snapshot" +5%
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Pixquizpan +1
+|Materials=Bambrox's Shawl
+|Materials_Number=50
+|Level=128
+|NM=Wyvernhunter Bambrox
+|Aug1=DMG +36
+|Aug2=Accuracy & Magic Accuracy +40
+|Aug3=Magic Attack Bonus +50
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Pukulatmuj +1
+|Materials=Arke's Wing
+|Materials_Number=50
+|Level=125
+|NM=Arke
+|Aug1=DMG +38
+|Aug2=Accuracy & Magic Accuracy +30
+|Aug3=Sword Enhancement Spell Damage +150%
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Raicho +1
+|Materials=Vidmapire's Claw
+|Materials_Number=50
+|Level=128
+|NM=Vidmapire
+|Aug1=DMG +20
+|Aug2=Accuracy & Magic Accuracy +40
+|Aug3=Magic Defense Bonus +5
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Sangarius +1
+|Materials=Vial Of Lumber Jill's Spittle
+|Materials_Number=50
+|Level=125
+|NM=Lumber Jill
+|Aug1=DMG +35
+|Aug2=Accuracy & Magic Accuracy +30
+|Aug3="Quadruple Attack" +3%
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Tancho +1
+|Materials=Orcfeltrap's Leaf
+|Materials_Number=50
+|Level=119
+|NM=Orcfeltrap
+|Aug1=DMG +25
+|Aug2=Accuracy, Ranged Accuracy, & Magic Accuracy +20
+|Aug3=Magic Attack Bonus +20
+|Lustreless=Scale
+}}
+{{Unity Armor Row 
+|Name=Tanmogayi +1
+|Materials=Sarama's Hide
+|Materials_Number=50
+|Level=135
+|NM=Sarama
+|Aug1=DMG+11
+|Aug2=Accuracy & Mag. Accuracy +40
+|Aug3=Attack+40
+|Lustreless=Wing
+}}
+{{Unity Armor Row
+|Name=Ternion Dagger +1
+|Materials=Mephitas's Claw
+|Materials_Number=50
+|Level=125
+|NM=Mephitas
+|Aug1=DMG +17
+|Aug2=Accuracy & Magic Accuracy +40
+|Aug3=Weapon Skill Damage +5%
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Triska Scythe +1
+|Materials=Tuft Of Camahueto's Fur
+|Materials_Number=50
+|Level=128
+|NM=Camahueto
+|Aug1=DMG +56
+|Aug2=Accuracy & Magic Accuracy +40
+|Aug3=Critical Hit Rate +10%
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Ushenzi +1
+|Materials=Glazemane's Fang
+|Materials_Number=50
+|Level=128
+|NM=Glazemane
+|Aug1=DMG +28
+|Aug2=Accuracy & Magic Accuracy +40
+|Aug3="Cure" Potency Received +10%
+|Lustreless=Hide
+}}
+}}
+|}
+
+===Mage===
+{| align="center"
+|
+{{Unity Armor Table
+|Unity Armor Row=
+{{Unity Armor Row
+|Name=Ababinili +1
+|Materials=Arke's Wing
+|Materials_Number=50
+|Level=125
+|NM=Arke
+|Aug1=Healing Magic Skill +10
+|Aug2=Enhancing Magic Skill +10
+|Aug3=Damage Taken -10%
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Contemplator +1
+|Materials=Tumult's Blood
+|Materials_Number=50
+|Level=145
+|NM=Tumult Curator
+|Aug1=Magic Accuracy +70
+|Aug2=Enfeebling Magic Skill +20
+|Aug3=MND +10
+|Lustreless=Wing
+}}
+{{Unity Armor Row
+|Name=Magesmasher +1
+|Materials=Strix's Tailfeather
+|Materials_Number=50
+|Level=125
+|NM=Strix
+|Aug1=DMG +45
+|Aug2=Accuracy & Magic Accuracy +30
+|Aug3=Weapon Skill Damage +15%
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Marin Staff +1
+|Materials=Vedrfolnir's Wing
+|Materials_Number=50
+|Level=128
+|NM=Vedrfolnir
+|Aug1=Magic Attack Bonus +40
+|Aug2=Accuracy & Magic Accuracy +40
+|Aug3=INT/MND +10
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Pouwhenua +1
+|Materials=Mender's Log{{!}}Woodland Mender's Log
+|Materials_Number=50
+|Level=122
+|NM=Woodland Mender
+|Aug1=DMG +45
+|Aug2=Accuracy & Magic Accuracy +30
+|Aug3="Store TP" +10
+|Lustreless=Scale
+}}
+{{Unity Armor Row
+|Name=Septoptic +1
+|Materials=Shedu's Mane
+|Materials_Number=50
+|Level=135
+|NM=Shedu
+|Aug1=DMG:+10
+|Aug2=Accuracy & Magic Accuracy +40
+|Aug3="Mag. Atk. Bns."+30
+|Lustreless=Wing
+}}
+
+}}
+|}
+
+===Ranged===
+{| align="center"
+|
+{{Unity Armor Table
+|Unity Armor Row=
+{{Unity Armor Row 
+|Name=Antitail +1
+|Materials=Sovereign's Hide
+|Materials_Number=50
+|Level=135
+|NM=Sovereign Behemoth
+|Aug1=Mag. Evasion+15
+|Aug2="Double Attack"+3
+|Lustreless=Wing
+}}
+{{Unity Armor Row
+|Name=Imati +1
+|Materials=Bambrox's Shawl
+|Materials_Number=50
+|Level=128
+|NM=Wyvernhunter Bambrox
+|Aug1=DMG +17
+|Aug2=Ranged Accuracy +40
+|Aug3="Snapshot" +10%
+|Lustreless=Hide
+}}
+{{Unity Armor Row 
+|Name=Malison +1
+|Materials=Tolba's Shell
+|Materials_Number=50
+|Level=135
+|NM=Tolba
+|Aug1=Rng. Atk.+45
+|Aug2=Rng. Acc. & Mag. Acc. +40
+|Aug3=DMG:+5
+|Lustreless=Wing
+}}
+{{Unity Armor Row
+|Name=Mengado +1
+|Materials=Veloz's Needle
+|Materials_Number=50
+|Level=122
+|NM=Cactrot Veloz
+|Aug1="Snapshot" +15
+|Aug2=DMG +10
+|Aug3=Ranged Accuracy +20
+|Lustreless=Scale
+}}
+{{Unity Armor Row
+|Name=Paloma +1
+|Materials=Ethereal Incense
+|Materials_Number=50
+|Level=128
+|NM=Borealis Shadow
+|Aug1=DMG +9
+|Aug2=Ranged Accuracy +40
+|Aug3="Rapid Shot" +15%
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Wingcutter +1
+|Materials=Abyssdiver's Feather
+|Materials_Number=50
+|Level=119
+|NM=Abyssdiver
+|Aug1=Accuracy +10
+|Aug2=Evasion +10
+|Lustreless=Scale
+}}
+}}
+|}
+
+===Shields===
+{| align="center"
+|
+{{Unity Armor Table
+|Unity Armor Row=
+{{Unity Armor Row
+|Name=Ajax +1
+|Materials=Coca's Wing
+|Materials_Number=50
+|Level=125
+|NM=Coca
+|Aug1=Shield Block Rate +10%
+|Aug2=Enhancing Magic Received Duration +10%
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Deliverance +1
+|Materials=Ethereal Incense
+|Materials_Number=50
+|Level=128
+|NM=Borealis Shadow
+|Aug1=Accuracy & Magic Accuracy +30
+|Aug2=Shield Skill +10
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Evalach +1
+|Materials=Jester Malatrix's Shard
+|Materials_Number=50
+|Level=119
+|NM=Jester Malatrix
+|Aug1=HP +150
+|Aug2=Shield Skill +10
+|Aug3=Accuracy & Magic Accuracy +20
+|Lustreless=Scale
+}}
+{{Unity Armor Row 
+|Name=Forfend +1
+|Materials=Tolba's Shell
+|Materials_Number=50
+|Level=135
+|NM=Tolba
+|Aug1=Accuracy+15
+|Aug2=Mag. Acc.+15
+|Aug3=Enha. mag. skill +10
+|Lustreless=Wing
+
+}}
+}}
+|}
+
+===Grips===
+{| align="center"
+|
+{{Unity Armor Table
+|Unity Armor Row=
+{{Unity Armor Row
+|Name=Refined Grip +1
+|Materials=Voso's Hide
+|Materials_Number=50
+|Level=122
+|NM=Voso
+|Aug1=DEF +20
+|Aug2=Parrying Skill +10
+|Lustreless=Scale
+}}
+{{Unity Armor Row
+|Name=Rigorous Grip +1
+|Materials=Douma's Shard{{!}}Douma Weapon's shard
+|Materials_Number=50
+|Level=125
+|NM=Douma Weapon
+|Aug1=Attack +30
+|Aug2=STR +15
+|Lustreless=Hide
+}}
+}}
+|}
+
+===Level 99 Equipment===
+{| align="center"
+|
+{{Scrub Unity Armor Table
+|Unity Armor Row=
+{{Scrub Unity Armor Row
+|Name=Damani Horn +1
+|Materials=Strand Of Sleepy Mabel's Fur
+|Materials_Number=30
+|Accolades=5,000
+|NM=Sleepy Mabel
+|Aug1={{question}}
+|Aug2={{question}}
+|Aug3={{question}}
+}}
+{{Scrub Unity Armor Row
+|Name=Thorfinn Shield +1
+|Materials=Ironhorn Baldurno's Horn
+|Materials_Number=30
+|Accolades=5,000
+|NM=Ironhorn Baldurno
+|Aug1={{question}}
+|Aug2={{question}}
+|Aug3={{question}}
+}}
+{{Scrub Unity Armor Row
+|Name=Cloud Hairpin +1
+|Materials=Serpopard Ninlil's Bone
+|Materials_Number=30
+|Accolades=5,000
+|NM=Serpopard Ninlil
+|Aug1={{question}}
+|Aug2={{question}}
+|Aug3={{question}}
+}}
+}}
+|}
+<noinclude>[[Category:Unity Concord]][[Category:Unity Rewards]]</noinclude>
+
+<noinclude>{{disambiguation|Unity Weapons|Unity Armor}}{{:Category:Unity Rewards}}</noinclude>
+{| align="center"
+|
+{{Unity Armor Table
+|Unity Armor Row=
+{{Unity Armor Row
+|Name=Acuity Belt +1
+|Materials=Clump Of Joyous Green's Moss
+|Materials_Number=50
+|Level=122
+|NM=Joyous Green
+|Slot=Waist
+|Aug1=Magic Accuracy +15
+|Aug2=INT +10
+|Lustreless=Scale
+}}
+{{Unity Armor Row
+|Name=Apeile Ring +1
+|Materials=Immanibugard's Hide
+|Materials_Number=50
+|Level=119
+|NM=Immanibugard
+|Slot=Ring
+|Aug1=DEF +20
+|Aug2=Magic Defense Bonus +5
+|Lustreless=Scale
+}}
+{{Unity Armor Row
+|Name=Arete del Luna +1
+|Materials=Veloz's Needle
+|Materials_Number=50
+|Level=119
+|NM=Cactrot Veloz
+|Slot=Earring
+|Aug1="Resist Sleep" +15
+|Aug2="Resist Charm" +15
+|Lustreless=Scale
+}}
+{{Unity Armor Row
+|Name=Aurist's Cape +1
+|Materials=V. Cluster's Ash
+|Materials_Number=50
+|Level=128
+|NM=Volatile Cluster
+|Slot=Back
+|Aug1=Accuracy & Magic Accuracy +25
+|Aug2=INT/MND +25
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Bathy Choker +1
+|Materials=Bakunawa's Ink
+|Materials_Number=50
+|Level=125
+|NM=Bakunawa
+|Slot=Neck
+|Aug1=Evasion +15
+|Aug2="Counter" +10
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Cacoethic Ring +1
+|Materials=Vermillion's Wing
+|Materials_Number=50
+|Level=125
+|NM=Vermillion Fishfly
+|Slot=Ring
+|Aug1=DEX +10
+|Aug2=AGI +10
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Canto Necklace +1
+|Materials=Clump Of Joyous Green's Moss
+|Materials_Number=50
+|Level=122
+|NM=Joyous Green
+|Slot=Neck
+|Aug1=Magic Accuracy +15
+|Aug2=CHR +10
+|Lustreless=Scale
+}}
+{{Unity Armor Row 
+|Name=Domin. Earring +1
+|namebreak=y
+|Materials=Sovereign's Hide
+|Materials_Number=50
+|Level=135
+|NM=Sovereign Behemoth
+|Slot=Earring
+|Aug1=Accuracy+10
+|Aug2=DEX+6
+|Lustreless=Wing
+}}
+{{Unity Armor Row
+|Name=Fi Follet Cape +1
+|Materials=Vidmapire's Claw
+|Materials_Number=50
+|Level=128
+|NM=Vidmapire
+|Slot=Back
+|Aug1="Fast Cast" +10%
+|Aug2=Spell Interruption Rate -5%
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Gelatinous Ring +1
+|Materials=Jar Of Garbage Gel's Mucus
+|Materials_Number=50
+|Level=122
+|NM=Garbage Gel
+|Slot=Ring
+|Aug1=VIT +15
+|Aug2=HP +100
+|Lustreless=Scale
+}}
+{{Unity Armor Row
+|Name=Ghastly Tathlum +1
+|Materials=Specter's Ore
+|Materials_Number=50
+|Level=125
+|NM=Specter Worm
+|Slot=Ammo
+|Aug1=Magic Damage +10
+|Aug2=INT +5
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Ground. Mantle +1
+|namebreak=y
+|Materials=Vial Of Lumber Jill's Spittle
+|Materials_Number=50
+|Level=125
+|NM=Lumber Jill
+|Slot=Back
+|Aug1=Accuracy +15
+|Aug2=DEX +10
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Handler's Earring +1
+|namebreak=y
+|Materials=Warblade Beak's Hide
+|Materials_Number=50
+|Level=122
+|NM=Warblade Beak
+|Slot=Earring
+|Aug1=Pet: Accuracy & Magic Accuracy +15
+|Aug2=Accuracy +10
+|Lustreless=Scale
+}}
+{{Unity Armor Row
+|Name=Kentarch Belt +1
+|Materials=Centurio's Armor
+|Materials_Number=50
+|Level=125
+|NM=Centurio XX-I
+|Slot=Waist
+|Aug1=STR +10
+|Aug2=DEX +10
+|Lustreless=Hide
+}}
+{{Unity Armor Row 
+|Name=Loricate Torque +1
+|Materials=Sovereign's Hide
+|Materials_Number=50
+|Level=135
+|NM=Sovereign Behemoth
+|Slot=Neck
+|Aug1=DEF+45
+|Aug2=Spell interruption rate down 5%
+|Lustreless=Wing
+}}
+{{Unity Armor Row
+|Name=Lugra Earring +1
+|Materials=Tiyanak's Fang
+|Materials_Number=50
+|Level=122
+|NM=Tiyanak
+|Slot=Earring
+|Aug1=DEF +20
+|Aug2=STR/DEX/VIT/INT +8
+|Lustreless=Scale
+}}
+{{Unity Armor Row
+|Name=Mephitas's Ring +1
+|Materials=Mephitas's Claw
+|Materials_Number=50
+|Level=125
+|NM=Mephitas
+|Slot=Ring
+|Aug1="Conserve MP" +15
+|Aug2=INT +5
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Metamor. Ring +1
+|Materials=Samantha's vine{{!}}Sybaritic Samantha's vine
+|Materials_Number=50
+|Level=119
+|NM=Sybaritic Samantha
+|Slot=Ring
+|Aug1=Magic Accuracy +10
+|Aug2=INT/MND/CHR +10
+|Lustreless=Scale
+}}
+{{Unity Armor Row
+|Name=Nourish. Earring +1
+|namebreak=y
+|Materials=Intuila's Hide
+|Materials_Number=50
+|Level=119
+|NM=Intuila
+|Slot=Earring
+|Aug1="Resist Silence" +15
+|Aug2=Spell Interruption Rate -5%
+|Lustreless=Scale
+}}
+{{Unity Armor Row
+|Name=Odnowa Earring +1
+|Materials=Celine's Vine
+|Materials_Number=50
+|Level=128
+|NM=Carousing Celine
+|Slot=Earring
+|Aug1=DEF +30
+|Aug2=Damage Taken -3%
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Sailfi Belt +1
+|Materials=Emperor Arthro's Shell
+|Materials_Number=50
+|Level=122
+|NM=Emperor Arthro
+|Slot=Waist
+|Aug1=STR +15
+|Aug2="Double Attack" +5%
+|Lustreless=Scale
+}}
+{{Unity Armor Row
+|Name=Shinjutsu-no-Obi +1
+|namebreak=y
+|Materials=Orcfeltrap's Leaf
+|Materials_Number=50
+|Level=119
+|NM=Orcfeltrap
+|Slot=Waist
+|Aug1="Conserve MP" +15
+|Aug2="Fast Cast" +5%
+|Lustreless=Scale
+}}
+{{Unity Armor Row
+|Name=Seeth. Bomblet +1
+|namebreak=y
+|Materials=G. Grenade's Ash
+|Materials_Number=50
+|Level=128
+|NM=Grand Grenade
+|Slot=Ammo
+|Aug1=STR +10
+|Aug2=Haste +5%
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Unmoving Collar +1
+|Materials=Samantha's vine
+|Materials_Number=50
+|Level=119
+|NM=Sybaritic Samantha
+|Slot=Neck
+|Aug1=DEF +30
+|Aug2=HP +200
+|Lustreless=Scale
+}}
+{{Unity Armor Row 
+|Name=Vim Torque +1
+|Materials=Thu'ban's Scale
+|Materials_Number=50
+|Level=135
+|NM=Thu'ban
+|Slot=Neck
+|Aug1=Accuracy+15
+|Aug2="Store TP"+10
+|Lustreless=Wing
+}}
+{{Unity Armor Row
+|Name=Warder's Charm +1
+|Materials=Largantua's Shard
+|Materials_Number=50
+|Level=125
+|NM=Largantua
+|Slot=Neck
+|Aug1=Skillchain Damage +15%
+|Aug2=Magic Burst Bonus +10%
+|Lustreless=Hide
+}}
+{{Unity Armor Row
+|Name=Zwazo Earring +1
+|Materials=Mhuufya's Beak
+|Materials_Number=50
+|Level=125
+|NM=Kubool Ja's Mhuufya
+|Slot=Earring
+|Aug1=HP +45
+|Aug2=Shield Block Rate +3%
+|Lustreless=Hide
+}}
+}}
+|}
+
+
+<noinclude>[[Category:Unity Concord]][[Category:Unity Rewards]]</noinclude>
+

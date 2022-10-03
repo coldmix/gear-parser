@@ -1,0 +1,1330 @@
+[
+    {
+        "name": "Adorned Helm +1",
+        "augments": {
+            "attribute": {
+                "Accuracy": 45,
+                "Magic Accuracy": 45,
+                "Attack": 50,
+                "STR": 10,
+                "DEX": 10,
+                "AGI": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10
+            }
+        }
+    },
+    {
+        "name": "Alhazen Hat +1",
+        "augments": {
+            "attribute": {
+                "STR": 30,
+                "DEX": 30,
+                "AGI": 30,
+                "VIT": 30,
+                "INT": 30,
+                "CHR": 30,
+                "Evasion": 50,
+                "Accuracy": 25,
+                "Ranged Accuracy": 25,
+                "Magic Accuracy": 25
+            }
+        }
+    },
+    {
+        "name": "Blistering Sallet +1",
+        "augments": {
+            "attribute": {
+                "Accuracy": 45,
+                "Magic Accuracy": 45,
+                "Critical Hit Rate %": 10,
+                "STR": 25,
+                "DEX": 25
+            }
+        }
+    },
+    {
+        "name": "Hike Khat +1",
+        "augments": {
+            "attribute": {
+                "Physical Damage Taken %": -10,
+                "STR": 10,
+                "DEX": 10,
+                "AGI": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10
+            },
+            "conditions": {
+                "Pet": {
+                    "attribute": {
+                        "Damage Taken %": -5
+                    }
+                }
+            }
+        }
+    },
+    {
+        "name": "Imp. Wing Hair. +1",
+        "augments": {
+            "attribute": {
+                "Accuracy": 35,
+                "Magic Evasion": 100,
+                "Critical Hit Rate %": 10
+            }
+        }
+    },
+    {
+        "name": "Loess Barbuta +1",
+        "augments": {
+            "attribute": {
+                "Enmity": 10,
+                "Damage taken %": -10,
+                "STR": 10,
+                "DEX": 10,
+                "AGI": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10
+            }
+        }
+    },
+    {
+        "name": "Stinger Helm +1",
+        "augments": {
+            "attribute": {
+                "Accuracy": 30,
+                "Magic Accuracy": 30,
+                "Physical Damage Limit %": 5,
+                "STR": 10,
+                "DEX": 10,
+                "AGI": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10
+            }
+        }
+    },
+    {
+        "name": "Agony Jerkin +1",
+        "augments": {
+            "attribute": {
+                "Attack": 60,
+                "Store TP": 10,
+                "STR": 10,
+                "DEX": 10,
+                "AGI": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10
+            }
+        }
+    },
+    {
+        "name": "Cohort Cloak +1",
+        "augments": {
+            "attribute": {
+                "Magic Accuracy": 100,
+                "Magic Attack Bonus": 100,
+                "STR": 20,
+                "DEX": 20,
+                "AGI": 20,
+                "VIT": 20,
+                "INT": 20,
+                "CHR": 20
+            }
+        }
+    },
+    {
+        "name": "Emet Harness +1",
+        "augments": {
+            "attribute": {
+                "Evasion": 30,
+                "Accuracy": 40,
+                "STR": 10,
+                "DEX": 10,
+                "AGI": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10
+            }
+        }
+    },
+    {
+        "name": "Hime Domaru +1",
+        "augments": {
+            "attribute": {
+                "Accuracy": 45,
+                "Double Attack %": 5,
+                "STR": 10,
+                "DEX": 10,
+                "AGI": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10
+            }
+        }
+    },
+    {
+        "name": "Lugra Cloak +1",
+        "augments": {
+            "attribute": {
+                "Magic Accuracy": 60,
+                "Spell Interruption Rate %": -20,
+                "STR": 20,
+                "DEX": 20,
+                "AGI": 20,
+                "VIT": 20,
+                "INT": 20,
+                "CHR": 20
+            }
+        }
+    },
+    {
+        "name": "Obviat. Cuirass +1",
+        "augments": {
+            "attribute": {
+                "Mag. Evasion": 60,
+                "Enmity": 5,
+                "STR": 10,
+                "DEX": 10,
+                "AGI": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10
+            }
+        }
+    },
+    {
+        "name": "Ros. Jaseran +1",
+        "augments": {
+            "attribute": {
+                "Magic Accuracy": 45,
+                "Damage Taken %": -5,
+                "STR": 10,
+                "DEX": 10,
+                "AGI": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10
+            }
+        }
+    },
+    {
+        "name": "Shomonjijoe +1",
+        "augments": {
+            "conditions": {
+                "Avatar": {
+                    "attribute": {
+                        "TP Bonus": 300,
+                        "Accuracy": 30,
+                        "Magic Accuracy": 30,
+                        "STR": 10,
+                        "DEX": 10,
+                        "AGI": 10,
+                        "VIT": 10,
+                        "INT": 10,
+                        "CHR": 10
+                    }
+                }
+            }
+        }
+    },
+    {
+        "name": "Tatena. Harama. +1",
+        "augments": {
+            "attribute": {
+                "Accuracy": 30,
+                "STR": 10,
+                "DEX": 10,
+                "AGI": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10,
+                "Triple Attack %": 5
+            }
+        }
+    },
+    {
+        "name": "Asteria Mitts +1",
+        "augments": {
+            "attribute": {
+                "MP": 45
+            },
+            "conditions": {
+                "Avatar": {
+                    "attribute": {
+                        "Accuracy": 40,
+                        "Magic Accuracy": 40,
+                        "Magic Burst Bonus %": 10
+                    }
+                }
+            }
+        }
+    },
+    {
+        "name": "Gazu Bracelet +1",
+        "augments": {
+            "attribute": {
+                "Accuracy": 50,
+                "Haste %": 10,
+                "STR": 10,
+                "DEX": 10,
+                "AGI": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10
+            }
+        }
+    },
+    {
+        "name": "Kachi. Kote +1",
+        "augments": {
+            "attribute": {
+                "Attack": 45,
+                "Accuracy": 30,
+                "Magic Accuracy": 30,
+                "STR": 10,
+                "DEX": 10,
+                "AGI": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10
+            }
+        }
+    },
+    {
+        "name": "Lamassu Mitts +1",
+        "augments": {
+            "conditions": {
+                "Avatar": {
+                    "attribute": {
+                        "STR": 30,
+                        "DEX": 30,
+                        "AGI": 30,
+                        "VIT": 30,
+                        "INT": 30,
+                        "CHR": 30,
+                        "Accuracy": 40,
+                        "Magic Accuracy": 40
+                    }
+                }
+            },
+            "attribute": {
+                "Avatar Perpetuation Cost": -5
+            }
+        }
+    },
+    {
+        "name": "Macabre Gaunt. +1",
+        "augments": {
+            "attribute": {
+                "Magic Evasion": 75,
+                "Occasionally Resist Status Ailments": 10,
+                "STR": 10,
+                "DEX": 10,
+                "AGI": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10
+            }
+        }
+    },
+    {
+        "name": "Shigure Tekko +1",
+        "augments": {
+            "attribute": {
+                "Evasion": 90,
+                "Magic Evasion": 80,
+                "STR": 10,
+                "DEX": 10,
+                "AGI": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10
+            }
+        }
+    },
+    {
+        "name": "Tatena. Gote +1",
+        "augments": {
+            "attribute": {
+                "Accuracy": 40,
+                "STR": 10,
+                "DEX": 10,
+                "AGI": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10,
+                "Triple Attack %": 4
+            }
+        }
+    },
+    {
+        "name": "Assid. Pants +1",
+        "augments": {
+            "conditions": {
+                "Avatar": {
+                    "attribute": {
+                        "Accuracy": 35,
+                        "Magic Accuracy": 35,
+                        "STR": 20,
+                        "DEX": 20,
+                        "AGI": 20,
+                        "VIT": 20,
+                        "INT": 20,
+                        "CHR": 20
+                    }
+                }
+            },
+            "attribute": {
+                "MP": 20
+            }
+        }
+    },
+    {
+        "name": "Augury Cuisses +1",
+        "augments": {
+            "attribute": {
+                "Attack": 60,
+                "Magic Attack Bonus": 30,
+                "STR": 10,
+                "DEX": 10,
+                "AGI": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10
+            }
+        }
+    },
+    {
+        "name": "Tatena. Haidate +1",
+        "augments": {
+            "attribute": {
+                "Accuracy": 60,
+                "STR": 10,
+                "DEX": 10,
+                "AGI": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10,
+                "Triple Attack %": 3
+            }
+        }
+    },
+    {
+        "name": "Zoar Subligar +1",
+        "augments": {
+            "attribute": {
+                "Accuracy": 30,
+                "Critical Hit Rate %": 5,
+                "STR": 10,
+                "DEX": 10,
+                "AGI": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10
+            }
+        }
+    },
+    {
+        "name": "Hippo. Socks +1",
+        "augments": {
+            "attribute": {
+                "Resist Bind": 45,
+                "Evasion": 20,
+                "STR": 10,
+                "DEX": 10,
+                "AGI": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10
+            }
+        }
+    },
+    {
+        "name": "Hygieia Clogs +1",
+        "augments": {
+            "attribute": {
+                "Cure Potency %": 15,
+                "Healing Magic Skill": 10,
+                "STR": 10,
+                "DEX": 10,
+                "AGI": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10
+            }
+        }
+    },
+    {
+        "name": "Jute Boots +1",
+        "augments": {
+            "attribute": {
+                "DEX": 10,
+                "AGI": 10,
+                "Magic Evasion": 30,
+                "STR": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10
+            }
+        }
+    },
+    {
+        "name": "Regal Pumps +1",
+        "augments": {
+            "attribute": {
+                "Healing Magic Skill": 10,
+                "Enhancing Magic Skill": 10,
+                "STR": 10,
+                "DEX": 10,
+                "AGI": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10
+            }
+        }
+    },
+    {
+        "name": "Tatena. Sune. +1",
+        "augments": {
+            "attribute": {
+                "Accuracy": 60,
+                "STR": 10,
+                "DEX": 10,
+                "AGI": 10,
+                "VIT": 10,
+                "INT": 10,
+                "CHR": 10,
+                "Triple Attack %": 3
+            }
+        }
+    },
+    {
+        "name": "Aizkora +1",
+        "augments": {
+            "attribute": {
+                "Accuracy": 45,
+                "Magic Accuracy": 45,
+                "Triple Attack %": 3,
+                "Quadruple Attack %": 3
+            }
+        }
+    },
+    {
+        "name": "Anathema Harpe +1",
+        "augments": {
+            "attribute": {
+                "DMG": 20,
+                "Accuracy": 40,
+                "Magic Accuracy": 40,
+                "Critical Hit Rate %": 10
+            }
+        }
+    },
+    {
+        "name": "Beheader +1",
+        "augments": {
+            "attribute": {
+                "DMG": 53,
+                "Accuracy": 40,
+                "Magic Accuracy": 40,
+                "Haste %": 10
+            }
+        }
+    },
+    {
+        "name": "Buramgh +1",
+        "augments": {
+            "attribute": {
+                "DMG": 30,
+                "Accuracy": 35,
+                "Magic Accuracy": 35
+            },
+            "conditions": {
+                "Pet": {
+                    "attribute": {
+                        "Accuracy": 30,
+                        "Magic Accuracy": 30
+                    }
+                }
+            }
+        }
+    },
+    {
+        "name": "Combuster +1",
+        "augments": {
+            "conditions": {
+                "DMG": {}
+            },
+            "attribute": {
+                "Accuracy": 40,
+                "Mag. Accuracy": 40,
+                "Store TP": 10
+            }
+        }
+    },
+    {
+        "name": "Comeuppances +1",
+        "augments": {
+            "attribute": {
+                "DEX": 20,
+                "Accuracy": 40,
+                "Mag. Accuracy": 40,
+                "Store TP": 10
+            },
+            "conditions": {
+                "Pet": {
+                    "attribute": {
+                        "Accuracy": 40,
+                        "Mag. Accuracy": 40
+                    }
+                }
+            }
+        }
+    },
+    {
+        "name": "Demers. Degen +1",
+        "augments": {
+            "attribute": {
+                "Accuracy": 45,
+                "Magic Accuracy": 45,
+                "DEX": 10,
+                "Sword Enhancement Spell Damage %": 50
+            }
+        }
+    },
+    {
+        "name": "Emeici +1",
+        "augments": {
+            "attribute": {
+                "DMG": 30,
+                "Accuracy": 30,
+                "Magic Accuracy": 30,
+                "Critical Hit Rate %": 10
+            }
+        }
+    },
+    {
+        "name": "Fists of Fury +1",
+        "augments": {
+            "attribute": {
+                "DMG": 14,
+                "Accuracy": 40,
+                "Magic Accuracy": 40,
+                "Regen": 5
+            }
+        }
+    },
+    {
+        "name": "Flyssa +1",
+        "augments": {
+            "conditions": {
+                "DMG": {}
+            },
+            "attribute": {
+                "Accuracy": 40,
+                "Mag. Accuracy": 40,
+                "Damage taken %": -5
+            }
+        }
+    },
+    {
+        "name": "Gae Derg +1",
+        "augments": {
+            "attribute": {
+                "DMG": 62,
+                "Accuracy": 40,
+                "Magic Accuracy": 40,
+                "Store TP": 8
+            }
+        }
+    },
+    {
+        "name": "Habilitator +1",
+        "augments": {
+            "conditions": {
+                "DMG": {},
+                "Pet": {
+                    "attribute": {
+                        "Accuracy": 40,
+                        "Mag. Accuracy": 40
+                    }
+                }
+            },
+            "attribute": {
+                "Accuracy": 40,
+                "Mag. Accuracy": 40,
+                "STR": 10,
+                "DEX": 10,
+                "CHR": 10
+            }
+        }
+    },
+    {
+        "name": "Jugo Kukri +1",
+        "augments": {
+            "attribute": {
+                "DMG": 13,
+                "Accuracy": 40,
+                "Magic Accuracy": 40,
+                "Evasion": 20
+            }
+        }
+    },
+    {
+        "name": "Kladenets +1",
+        "augments": {
+            "attribute": {
+                "DMG": 50,
+                "Accuracy": 40,
+                "Magic Accuracy": 40,
+                "Fast Cast %": 10
+            }
+        }
+    },
+    {
+        "name": "Kunimune +1",
+        "augments": {
+            "attribute": {
+                "TP Bonus": 500,
+                "Accuracy": 30,
+                "Magic Accuracy": 30,
+                "STR": 10
+            }
+        }
+    },
+    {
+        "name": "Kustawi +1",
+        "augments": {
+            "attribute": {
+                "Ranged Attack": 20,
+                "Ranged Accuracy": 40,
+                "Magic Accuracy": 40,
+                "Enmity": -5
+            }
+        }
+    },
+    {
+        "name": "Loxotic Mace +1",
+        "augments": {
+            "attribute": {
+                "DMG": 33,
+                "Accuracy": 40,
+                "Magic Accuracy": 40,
+                "Weapon Skill Damage %": 10
+            }
+        }
+    },
+    {
+        "name": "Mdomo Axe +1",
+        "augments": {
+            "attribute": {
+                "DMG": 24,
+                "Accuracy": 40,
+                "Magic Accuracy": 40
+            },
+            "conditions": {
+                "Pet": {
+                    "attribute": {
+                        "Accuracy": 50,
+                        "Magic Accuracy": 50
+                    }
+                }
+            }
+        }
+    },
+    {
+        "name": "Montante +1",
+        "augments": {
+            "conditions": {
+                "DMG": {}
+            },
+            "attribute": {
+                "Accuracy": 40,
+                "Mag. Accuracy": 40,
+                "HP": 100
+            }
+        }
+    },
+    {
+        "name": "Norifusa +1",
+        "augments": {
+            "attribute": {
+                "DMG": 10,
+                "Accuracy": 40,
+                "Magic Accuracy": 40,
+                "Skillchain Damage %": 20
+            }
+        }
+    },
+    {
+        "name": "Nullis +1",
+        "augments": {
+            "conditions": {
+                "DMG": {}
+            },
+            "attribute": {
+                "Accuracy": 40,
+                "Mag. Accuracy": 40,
+                "Dark magic skill": 10
+            }
+        }
+    },
+    {
+        "name": "Perun +1",
+        "augments": {
+            "attribute": {
+                "Ranged Attack": 45,
+                "Ranged Accuracy": 30,
+                "Magic Accuracy": 30,
+                "Snapshot %": 5
+            }
+        }
+    },
+    {
+        "name": "Pixquizpan +1",
+        "augments": {
+            "attribute": {
+                "DMG": 36,
+                "Accuracy": 40,
+                "Magic Accuracy": 40,
+                "Magic Attack Bonus": 50
+            }
+        }
+    },
+    {
+        "name": "Pukulatmuj +1",
+        "augments": {
+            "attribute": {
+                "DMG": 38,
+                "Accuracy": 30,
+                "Magic Accuracy": 30,
+                "Sword Enhancement Spell Damage %": 150
+            }
+        }
+    },
+    {
+        "name": "Raicho +1",
+        "augments": {
+            "attribute": {
+                "DMG": 20,
+                "Accuracy": 40,
+                "Magic Accuracy": 40,
+                "Magic Defense Bonus": 5
+            }
+        }
+    },
+    {
+        "name": "Sangarius +1",
+        "augments": {
+            "attribute": {
+                "DMG": 35,
+                "Accuracy": 30,
+                "Magic Accuracy": 30,
+                "Quadruple Attack %": 3
+            }
+        }
+    },
+    {
+        "name": "Tancho +1",
+        "augments": {
+            "attribute": {
+                "DMG": 25,
+                "Accuracy": 20,
+                "Ranged Accuracy": 20,
+                "Magic Accuracy": 20,
+                "Magic Attack Bonus": 20
+            }
+        }
+    },
+    {
+        "name": "Tanmogayi +1",
+        "augments": {
+            "attribute": {
+                "DMG": 11,
+                "Accuracy": 40,
+                "Mag. Accuracy": 40,
+                "Attack": 40
+            }
+        }
+    },
+    {
+        "name": "Ternion Dagger +1",
+        "augments": {
+            "attribute": {
+                "DMG": 17,
+                "Accuracy": 40,
+                "Magic Accuracy": 40,
+                "Weapon Skill Damage %": 5
+            }
+        }
+    },
+    {
+        "name": "Triska Scythe +1",
+        "augments": {
+            "attribute": {
+                "DMG": 56,
+                "Accuracy": 40,
+                "Magic Accuracy": 40,
+                "Critical Hit Rate %": 10
+            }
+        }
+    },
+    {
+        "name": "Ushenzi +1",
+        "augments": {
+            "attribute": {
+                "DMG": 28,
+                "Accuracy": 40,
+                "Magic Accuracy": 40,
+                "Cure Potency Received %": 10
+            }
+        }
+    },
+    {
+        "name": "Ababinili +1",
+        "augments": {
+            "attribute": {
+                "Healing Magic Skill": 10,
+                "Enhancing Magic Skill": 10,
+                "Damage Taken %": -10
+            }
+        }
+    },
+    {
+        "name": "Contemplator +1",
+        "augments": {
+            "attribute": {
+                "Magic Accuracy": 70,
+                "Enfeebling Magic Skill": 20,
+                "MND": 10
+            }
+        }
+    },
+    {
+        "name": "Magesmasher +1",
+        "augments": {
+            "attribute": {
+                "DMG": 45,
+                "Accuracy": 30,
+                "Magic Accuracy": 30,
+                "Weapon Skill Damage %": 15
+            }
+        }
+    },
+    {
+        "name": "Marin Staff +1",
+        "augments": {
+            "attribute": {
+                "Magic Attack Bonus": 40,
+                "Accuracy": 40,
+                "Magic Accuracy": 40,
+                "INT": 10,
+                "MND": 10
+            }
+        }
+    },
+    {
+        "name": "Pouwhenua +1",
+        "augments": {
+            "attribute": {
+                "DMG": 45,
+                "Accuracy": 30,
+                "Magic Accuracy": 30,
+                "Store TP": 10
+            }
+        }
+    },
+    {
+        "name": "Septoptic +1",
+        "augments": {
+            "conditions": {
+                "DMG": {}
+            },
+            "attribute": {
+                "Accuracy": 40,
+                "Magic Accuracy": 40,
+                "Mag. Atk. Bns.": 30
+            }
+        }
+    },
+    {
+        "name": "Antitail +1",
+        "augments": {
+            "attribute": {
+                "Mag. Evasion": 15,
+                "Double Attack": 3
+            }
+        }
+    },
+    {
+        "name": "Imati +1",
+        "augments": {
+            "attribute": {
+                "DMG": 17,
+                "Ranged Accuracy": 40,
+                "Snapshot %": 10
+            }
+        }
+    },
+    {
+        "name": "Malison +1",
+        "augments": {
+            "attribute": {
+                "Ranged Attack": 45,
+                "Ranged Accuracy": 40,
+                "Magic Accuracy": 40
+            },
+            "conditions": {
+                "DMG": {}
+            }
+        }
+    },
+    {
+        "name": "Mengado +1",
+        "augments": {
+            "attribute": {
+                "Snapshot": 15,
+                "DMG": 10,
+                "Ranged Accuracy": 20
+            }
+        }
+    },
+    {
+        "name": "Paloma +1",
+        "augments": {
+            "attribute": {
+                "DMG": 9,
+                "Ranged Accuracy": 40,
+                "Rapid Shot %": 15
+            }
+        }
+    },
+    {
+        "name": "Wingcutter +1",
+        "augments": {
+            "attribute": {
+                "Accuracy": 10,
+                "Evasion": 10
+            }
+        }
+    },
+    {
+        "name": "Ajax +1",
+        "augments": {
+            "attribute": {
+                "Shield Block Rate %": 10,
+                "Enhancing Magic Received Duration %": 10
+            }
+        }
+    },
+    {
+        "name": "Deliverance +1",
+        "augments": {
+            "attribute": {
+                "Accuracy": 30,
+                "Magic Accuracy": 30,
+                "Shield Skill": 10
+            }
+        }
+    },
+    {
+        "name": "Evalach +1",
+        "augments": {
+            "attribute": {
+                "HP": 150,
+                "Shield Skill": 10,
+                "Accuracy": 20,
+                "Magic Accuracy": 20
+            }
+        }
+    },
+    {
+        "name": "Forfend +1",
+        "augments": {
+            "attribute": {
+                "Accuracy": 15,
+                "Magic Accuracy": 15,
+                "Enha. mag. skill": 10
+            }
+        }
+    },
+    {
+        "name": "Refined Grip +1",
+        "augments": {
+            "attribute": {
+                "DEF": 20,
+                "Parrying Skill": 10
+            }
+        }
+    },
+    {
+        "name": "Rigorous Grip +1",
+        "augments": {
+            "attribute": {
+                "Attack": 30,
+                "STR": 15
+            }
+        }
+    },
+    {
+        "name": "Acuity Belt +1",
+        "augments": {
+            "attribute": {
+                "Magic Accuracy": 15,
+                "INT": 10
+            }
+        }
+    },
+    {
+        "name": "Apeile Ring +1",
+        "augments": {
+            "attribute": {
+                "DEF": 20,
+                "Magic Defense Bonus": 5
+            }
+        }
+    },
+    {
+        "name": "Arete del Luna +1",
+        "augments": {
+            "attribute": {
+                "Resist Sleep": 15,
+                "Resist Charm": 15
+            }
+        }
+    },
+    {
+        "name": "Aurist's Cape +1",
+        "augments": {
+            "attribute": {
+                "Accuracy": 25,
+                "Magic Accuracy": 25,
+                "INT": 25,
+                "MND": 25
+            }
+        }
+    },
+    {
+        "name": "Bathy Choker +1",
+        "augments": {
+            "attribute": {
+                "Evasion": 15,
+                "Counter": 10
+            }
+        }
+    },
+    {
+        "name": "Cacoethic Ring +1",
+        "augments": {
+            "attribute": {
+                "DEX": 10,
+                "AGI": 10
+            }
+        }
+    },
+    {
+        "name": "Canto Necklace +1",
+        "augments": {
+            "attribute": {
+                "Magic Accuracy": 15,
+                "CHR": 10
+            }
+        }
+    },
+    {
+        "name": "Domin. Earring +1",
+        "augments": {
+            "attribute": {
+                "Accuracy": 10,
+                "DEX": 6
+            }
+        }
+    },
+    {
+        "name": "Fi Follet Cape +1",
+        "augments": {
+            "attribute": {
+                "Fast Cast %": 10,
+                "Spell Interruption Rate %": -5
+            }
+        }
+    },
+    {
+        "name": "Gelatinous Ring +1",
+        "augments": {
+            "attribute": {
+                "VIT": 15,
+                "HP": 100
+            }
+        }
+    },
+    {
+        "name": "Ghastly Tathlum +1",
+        "augments": {
+            "attribute": {
+                "Magic Damage": 10,
+                "INT": 5
+            }
+        }
+    },
+    {
+        "name": "Ground. Mantle +1",
+        "augments": {
+            "attribute": {
+                "Accuracy": 15,
+                "DEX": 10
+            }
+        }
+    },
+    {
+        "name": "Handler's Earring +1",
+        "augments": {
+            "conditions": {
+                "Pet": {
+                    "attribute": {
+                        "Accuracy": 15,
+                        "Magic Accuracy": 15
+                    }
+                }
+            },
+            "attribute": {
+                "Accuracy": 10
+            }
+        }
+    },
+    {
+        "name": "Kentarch Belt +1",
+        "augments": {
+            "attribute": {
+                "STR": 10,
+                "DEX": 10
+            }
+        }
+    },
+    {
+        "name": "Loricate Torque +1",
+        "augments": {
+            "attribute": {
+                "DEF": 45,
+                "Spell interruption rate down %": 5
+            }
+        }
+    },
+    {
+        "name": "Lugra Earring +1",
+        "augments": {
+            "attribute": {
+                "DEF": 20,
+                "STR": 8,
+                "DEX": 8,
+                "VIT": 8,
+                "INT": 8
+            }
+        }
+    },
+    {
+        "name": "Mephitas's Ring +1",
+        "augments": {
+            "attribute": {
+                "Conserve MP": 15,
+                "INT": 5
+            }
+        }
+    },
+    {
+        "name": "Metamor. Ring +1",
+        "augments": {
+            "attribute": {
+                "Magic Accuracy": 10,
+                "INT": 10,
+                "MND": 10,
+                "CHR": 10
+            }
+        }
+    },
+    {
+        "name": "Nourish. Earring +1",
+        "augments": {
+            "attribute": {
+                "Resist Silence": 15,
+                "Spell Interruption Rate %": -5
+            }
+        }
+    },
+    {
+        "name": "Odnowa Earring +1",
+        "augments": {
+            "attribute": {
+                "DEF": 30,
+                "Damage Taken %": -3
+            }
+        }
+    },
+    {
+        "name": "Sailfi Belt +1",
+        "augments": {
+            "attribute": {
+                "STR": 15,
+                "Double Attack %": 5
+            }
+        }
+    },
+    {
+        "name": "Shinjutsu-no-Obi +1",
+        "augments": {
+            "attribute": {
+                "Conserve MP": 15,
+                "Fast Cast %": 5
+            }
+        }
+    },
+    {
+        "name": "Seeth. Bomblet +1",
+        "augments": {
+            "attribute": {
+                "STR": 10,
+                "Haste %": 5
+            }
+        }
+    },
+    {
+        "name": "Unmoving Collar +1",
+        "augments": {
+            "attribute": {
+                "DEF": 30,
+                "HP": 200
+            }
+        }
+    },
+    {
+        "name": "Vim Torque +1",
+        "augments": {
+            "attribute": {
+                "Accuracy": 15,
+                "Store TP": 10
+            }
+        }
+    },
+    {
+        "name": "Warder's Charm +1",
+        "augments": {
+            "attribute": {
+                "Skillchain Damage %": 15,
+                "Magic Burst Bonus %": 10
+            }
+        }
+    },
+    {
+        "name": "Zwazo Earring +1",
+        "augments": {
+            "attribute": {
+                "HP": 45,
+                "Shield Block Rate %": 3
+            }
+        }
+    }
+]
