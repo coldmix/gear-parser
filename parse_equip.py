@@ -73,6 +73,7 @@ class EquipStats():
 		'Evasion':["Eva."],
 		'Magic Evasion':["Mag. Eva."],
 		'Magic Def. Bonus':['M. Def. B.'],
+		'Range':['Ranged']
 	})
 	cleanup = str.maketrans({'"':None, '\n':' '})
 
@@ -161,20 +162,17 @@ class EquipStats():
 			nameLower = name.lower()
 			item = next((item for item in EquipStats.items if nameLower == item['name'].lower()), None)
 			if not item:
-				fuzzy = str.maketrans({'.':None, ' ':r'.*', '+':r'\+'})
-				nameMatch = name.lower().translate(fuzzy)
-				item = next((item for item in EquipStats.items if re.match(nameMatch, item['name'].lower())), None)
-			if not item:
-				item = next((item for item in EquipStats.items if re.match(nameMatch, item['nameLong'].lower())), None)
+				item = next((item for item in EquipStats.items if nameLower == item['nameLong'].lower()), None)
 		if not item:
 			print("Invalid item {} for slot {}".format(name, slotName))
 			return None
-		if item['slots']:
+		if 'slots' in item:
 			slot = next((s for s in item['slots'] if s.lower() == slotName.lower()), None)
 			if not slot:
 				print("Invalid slot {} for {}, valid slots {}".format(slotName, item['name'], item['slots']))
 				return None
 		else:
+			print('{} has no slots'.format(item['name']))
 			slot = slotName
 		if not augments:
 			unityItem = next((unity for unity in EquipStats.unityAugments if item['name'] == unity['name']), None)
@@ -368,9 +366,31 @@ class EquipStats():
 			stats = EquipStats.removeEmptyStats(stats)
 		return stats
 
+parser = argparse.ArgumentParser(description='Parse Gearinfo Stats.')
+parser.add_argument('filenames',metavar='filename', type=str, nargs='*', help='A lua gearinfo structure file to parse')
+parser.add_argument('--demo', action='store_true', help='Generate output using demo data')
+parser.add_argument('--diff', action='store_true', help='Generate diff data comparing two files')
+parser.add_argument('--debug', action='store_true', help='Export the lua script to debug.log to line errors investigation')
+parser.add_argument('--table', action='store_true', help='Generate in table form')
+parser.add_argument('--format',choices=['plain', 'simple', 'fancy_grid', 'html', 'pretty','mediawiki','github','tsv'],default='fancy_grid',help='Specify format of table')
+parser.add_argument('--gearswap', action='store_true', help='Input file is gearswap format (i.e. initialized in get_sets() and stored in sets)')
+parser.add_argument('--output', action='store', type=str, help='Output file to write the results')
+args = parser.parse_args()
+
+# print(args)
+statsList = []
+with open("items.json", mode="rt", encoding='utf-8') as file:
+	EquipStats.items = json.loads(file.read())
+with open("unity_augments.json", mode="rt") as file:
+	EquipStats.unityAugments = json.loads(file.read())
+
 def luaStruct(script):
 	lua = lupa.LuaRuntime(unpack_returned_tuples=True)
-	lua_func = lua.eval('function() return '+script+'end')
+	script = 'function() return '+script+'end'
+	if args.debug:
+		with open("debug.lua","w", encoding='utf-8') as file:
+			file.write(script)
+	lua_func = lua.eval(script)
 	return luaToPythonType(lua_func())
 
 def setsToList(sets, setList, path = ""):
@@ -446,26 +466,13 @@ sets = {}
 get_sets()
 return sets
 '''
+	if args.debug:
+		with open("debug.lua","w", encoding='utf-8') as file:
+			file.write(script)
 	results = lua.execute(script)
 	sets = luaToPythonType(results)
 	setList = setsToList(sets, {})
 	return setList
-
-parser = argparse.ArgumentParser(description='Parse Gearinfo Stats.')
-parser.add_argument('filenames',metavar='filename', type=str, nargs='*', help='A lua gearinfo structure file to parse')
-parser.add_argument('--demo', action='store_true', help='Generate output using demo data')
-parser.add_argument('--diff', action='store_true', help='Generate diff data comparing two files')
-parser.add_argument('--table', action='store_true', help='Generate in table form')
-parser.add_argument('--format',choices=['plain', 'simple', 'fancy_grid', 'html', 'pretty','mediawiki','github','tsv'],default='fancy_grid',help='Specify format of table')
-parser.add_argument('--gearswap', action='store_true', help='Input file is gearswap format (i.e. initialized in get_sets() and stored in sets)')
-parser.add_argument('--output', action='store', type=str, help='Output file to write the results')
-args = parser.parse_args()
-# print(args)
-statsList = []
-with open("items.json", mode="rt", encoding='utf-8') as file:
-	EquipStats.items = json.loads(file.read())
-with open("unity_augments.json", mode="rt") as file:
-	EquipStats.unityAugments = json.loads(file.read())
 
 if args.demo:
 	script = """
