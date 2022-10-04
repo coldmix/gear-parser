@@ -184,9 +184,31 @@ for key, item in items.items():
 							item['conditions'][condition]['trait'] = []
 							attribute = item['conditions'][condition]['attribute']
 							trait = item['conditions'][condition]['trait']
-						elif len(match[8].strip()) > 0 and attrFound:
-							# print('{} - {}'.format(item['name'],attr))
-							trait.append(match[8].strip().translate(cleanup))
+						elif len(match[8].strip()) > 0:
+							submatch = re.match('(Incr|Conv|Spel)([^\d]+)(\d[\d\.]+)(\%?[^\d]*)', match[8])
+							if submatch:
+								# print('{}'.format(submatch))
+								if len(submatch.group(1).strip()) > 0:
+									attrFound = True
+									name = submatch.group(1).strip()
+									name += submatch.group(2).strip()
+									name += ' '+submatch.group(4).strip()
+									name = replaceKey.replace(name.translate(cleanup))
+									if '.' in submatch.group(3):
+										value = float(submatch.group(3))
+									else:
+										value = int(submatch.group(3))
+									if name == 'Converts HP to MP':
+										attribute['HP'] = -value
+										attribute['MP'] = value
+									elif name == 'Converts MP to HP':
+										attribute['HP'] = value
+										attribute['MP'] = -value
+									else:
+										attribute[name] = value
+							elif attrFound:
+								# print('{} - {}'.format(item['name'],attr))
+								trait.append(match[8].strip().translate(cleanup))
 	itemsList.append(item)
 
 with open("items.json", mode="wt", encoding='utf-8') as file:

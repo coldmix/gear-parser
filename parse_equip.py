@@ -390,7 +390,11 @@ def luaStruct(script):
 	if args.debug:
 		with open("debug.lua","w", encoding='utf-8') as file:
 			file.write(script)
-	lua_func = lua.eval(script)
+	try:
+		lua_func = lua.eval(script)
+	except Exception as e:
+		print('Lua exception occurred', e, type(e))
+		raise
 	return luaToPythonType(lua_func())
 
 def setsToList(sets, setList, path = ""):
@@ -469,7 +473,11 @@ return sets
 	if args.debug:
 		with open("debug.lua","w", encoding='utf-8') as file:
 			file.write(script)
-	results = lua.execute(script)
+	try:
+		results = lua.execute(script)
+	except Exception as e:
+		print('Lua exception occurred', e, type(e))
+		raise
 	sets = luaToPythonType(results)
 	setList = setsToList(sets, {})
 	return setList
