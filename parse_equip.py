@@ -130,7 +130,7 @@ class EquipStats():
 		if 'attribute' in stats:
 			removeList = []
 			for k,v in stats['attribute'].items():
-				if isinstance(v, int) and v == 0:
+				if isinstance(v, (int,float)) and v == 0:
 					removeList.append(k)
 			for k in removeList:
 				del stats['attribute'][k]
@@ -525,7 +525,7 @@ if args.diff:
 	if len(statsList) < 2:
 		print("Minimum of 2 inputs required for diff")
 		exit(-1)
-	diffStats = EquipStats.diffStats(statsList[0]['charStats'].stats, statsList[1]['charStats'].stats)
+	diffStats = EquipStats.diffStats(statsList[0].stats, statsList[1].stats)
 else:
 	diffStats = None
 
