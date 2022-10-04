@@ -9,8 +9,9 @@ This script will parse the equipment set in the file and display the stats added
 If two sets are provided, the --diff option can be used to generate the comparision between the two equipment set
 
 ```
-usage: parse_equip.py [-h] [--demo] [--diff] [--table]
-                      [--format {plain,simple,fancy_grid,html,pretty,mediawiki,github,tsv}]
+usage: parse_equip.py [-h] [--demo] [--diff] [--debug] [--table]
+                      [--format {plain,simple,fancy_grid,html,pretty,mediawiki,github,tsv}] [--gearswap]
+                      [--output OUTPUT]
                       [filename ...]
 
 Parse Gearinfo Stats.
@@ -22,11 +23,14 @@ optional arguments:
   -h, --help            show this help message and exit
   --demo                Generate output using demo data
   --diff                Generate diff data comparing two files
+  --debug               Export the lua script to debug.log to line errors investigation
   --table               Generate in table form
   --format {plain,simple,fancy_grid,html,pretty,mediawiki,github,tsv}
                         Specify format of table
- ```
- 
+  --gearswap            Input file is gearswap format (i.e. initialized in get_sets() and stored in sets)
+  --output OUTPUT       Output file to write the results
+  
+  ```
  The equipment file format is similar to the Windower GearSwap export output, multiple sets can be specified in one file, separated by a comma.
  See tp_gear1.lua and tp_gear2.lua for examples.
  ```
@@ -210,6 +214,48 @@ optional arguments:
 ├───────────────┼───────────────────────┼─────────────────────────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
 │               │ Weapon skill damage % │                                             │ 20                                  │ 20                                           │
 ╘═══════════════╧═══════════════════════╧═════════════════════════════════════════════╧═════════════════════════════════════╧══════════════════════════════════════════════╛
+```
+
+### Parsing GearSwap data files
+
+```
+python .\parse_equip.py --gearswap --table --output results.txt C:\Games\Windower4\addons\GearSwap\data\Name_JOB.lua
+```
+The option --gearswap to support parsing of GearSwap files directly. When this option is added, the script assumes the lua file is a gearswap script and invokes the get_sets() function then retrieve the sets structure. The gearswap is expected to have the function get_sets() that configure all the sets in the sets {} object. See below for example of the functionality of the get_sets() script.
+
+The --output option will direct the output to a file instead of printing to the console.
+
+The parser will search for every non-empty set and extract it out into a single equipset and calculate the stats for the set. 
+```
+function get_sets()
+    sets.precast = {}
+    sets.midcast = {}
+    sets.aftercast = {}
+    sets.buff = {}
+    -- Current Active Set
+    sets.current = {}
+
+    -- Store the list of active buffs that affect equip
+    sets.buffActive = {}
+    -- Store the equip from actives buffs that will merge with TP set
+    sets.buffActiveTP = {}
+
+    sets.DD = {}
+    sets.DD.precast = {}
+    sets.DD.midcast = {}
+    sets.DD.aftercast = {}
+    sets.DD.buff = {}
+    sets.DD.aftercast.TP = {ammo="Aurgelmir Orb",ear1="Telos Earring",ear2="Suppanomimi",neck="Mirage Stole +1",ring1="Ilabrat Ring",ring2="Epona's Ring",back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},waist="Windbuffet Belt +1",head="Hashishin Kavuk +2",body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+24 Attack+24','"Store TP"+5','DEX+10','Accuracy+13','Attack+14',}}}
+    sets.DD.aftercast.Idle = set_combine(sets.DD.aftercast.TP,{ammo="Staunch Tathlum",ear1="Ethereal Earring",ear2="Etiolation Earring",ring1="Defending Ring",ring2="Etana Ring",neck="Loricate Torque +1",waist="Flume Belt +1",back="Moonbeam Cape",body="Hashishin Mintan +2",head={ name="Herculean Helm", augments={'"Dbl.Atk."+3','VIT+5','"Refresh"+2',}},hands={ name="Herculean Gloves", augments={'INT+5','MND+6','"Refresh"+2','Mag. Acc.+10 "Mag.Atk.Bns."+10',}},legs="Carmine Cuisses +1",feet={ name="Herculean Boots", augments={'Attack+8','"Refresh"+2',}}}) 
+
+
+    sets.DD.buff['Aftermath: Lv.3'] = {head="Malignance Chapeau",body="Malignance Tabard",hands="Malignance Gloves",legs="Malignance Tights",feet="Malignance Boots",back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},ammo="Aurgelmir Orb",neck="Mirage Stole +1",waist="Reiki Yotai",ear1="Telos Earring",ear2="Eabani Earring",ring1="Ilabrat Ring",ring2="Rajas Ring"}
+
+    sets.precast.WS = {ammo="Oshasha's Treatise",waist="Fotia Belt",neck="Fotia Gorget",ear1="Ishvara Earring",ear2="Moonshade Earring",ring1="Ilabrat Ring",ring2="Epona's Ring",back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},head="Hashishin Kavuk +2",body="Assim. Jubbah +3",hands="Jhakri Cuffs +2",legs="Luhlaza Shalwar +3",feet={ name="Herculean Boots", augments={'STR+3','"Dbl.Atk."+3','Weapon skill damage +10%','Accuracy+11 Attack+11',}}} --ammo="Aurgelmir Orb",
+    sets.precast['Chant du Cygne'] = set_combine(sets.precast.WS,{ammo="Aurgelmir Orb",waist="Fotia Belt",neck="Mirage Stole +1",ear1="Odr Earring",ear2="Moonshade Earring",ring1="Begrudging Ring",ring2="Epona's Ring",back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}},head="Blistering Sallet +1",body="Herculean Vest",hands="Adhemar Wrist. +1",legs="Samnuha Tights",feet={ name="Herculean Boots", augments={'Accuracy+24 Attack+24','"Store TP"+5','DEX+10','Accuracy+13','Attack+14',}}})
+}
+
+end
 ```
 
 ## Updating Resources
