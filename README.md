@@ -27,7 +27,7 @@ optional arguments:
                         Specify format of table
  ```
  
- The equipment file format is similar to the Windower GearSwap export output, multiple sets can be specified in one file.
+ The equipment file format is similar to the Windower GearSwap export output, multiple sets can be specified in one file, separated by a comma.
  See tp_gear1.lua and tp_gear2.lua for examples.
  ```
 {main="Trishula",sub="Utu Grip",ammo="Aurgelmir Orb",
