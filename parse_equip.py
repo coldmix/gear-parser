@@ -1,4 +1,4 @@
-import argparse, copy, json, lupa, re, tabulate
+import argparse, copy, json, lupa, os, re, tabulate
 
 class ReplaceKey():
 	def __init__(self, dictMap):
@@ -76,9 +76,10 @@ class EquipStats():
 	})
 	cleanup = str.maketrans({'"':None, '\n':' '})
 
-	def __init__(self, char = None, equip = None):
+	def __init__(self, char = None, equip = None, equipName = None):
 		self.stats = {}
 		self.active = ['Unity Ranking']
+		self.equipName = equipName
 		self.char = char
 		self.equip = equip
 		if self.equip:
@@ -152,24 +153,29 @@ class EquipStats():
 				del stats['conditions'][condition]
 		return stats
 
-	def itemStats(name, slot, augments={}, itemId=None, activeConditons=[]):
-		slot = EquipStats.replaceKey.replace(slot)
+	def itemStats(name, slotInput, augments={}, itemId=None, activeConditons=[]):
+		slotName = EquipStats.replaceKey.replace(slotInput)
 		if itemId:
 			item = next((item for item in EquipStats.items if itemId == item['id']), None)
 		elif name:
-			fuzzy = str.maketrans({'.':None, ' ':r'.*', '+':r'\+'})
-			nameMatch = name.lower().translate(fuzzy)
-			item = next((item for item in EquipStats.items if re.match(nameMatch, item['name'].lower())), None)
+			nameLower = name.lower()
+			item = next((item for item in EquipStats.items if nameLower == item['name'].lower()), None)
+			if not item:
+				fuzzy = str.maketrans({'.':None, ' ':r'.*', '+':r'\+'})
+				nameMatch = name.lower().translate(fuzzy)
+				item = next((item for item in EquipStats.items if re.match(nameMatch, item['name'].lower())), None)
 			if not item:
 				item = next((item for item in EquipStats.items if re.match(nameMatch, item['nameLong'].lower())), None)
 		if not item:
-			print("Invalid item {} for {}".format(name, slot))
+			print("Invalid item {} for slot {}".format(name, slotName))
 			return None
 		if item['slots']:
-			slot = next((s for s in item['slots'] if s.lower() == slot.lower()), None)
+			slot = next((s for s in item['slots'] if s.lower() == slotName.lower()), None)
 			if not slot:
-				print("Invalid slot {} for {}, valid slots {}".format(slot, item['name'], item['slots']))
+				print("Invalid slot {} for {}, valid slots {}".format(slotName, item['name'], item['slots']))
 				return None
+		else:
+			slot = slotName
 		if not augments:
 			unityItem = next((unity for unity in EquipStats.unityAugments if item['name'] == unity['name']), None)
 			if unityItem:
@@ -255,6 +261,8 @@ class EquipStats():
 		self.stats = {'equip':copy.deepcopy(EquipStats.defaultSlots),
 					'attribute':copy.deepcopy(EquipStats.defaultAttributes),
 					'conditions':{}}
+		if self.equipName:
+			self.stats['equipName'] = self.equipName
 		if self.char:
 			EquipStats.addStats(self.stats, self.char)
 		for slot,item in equipSet.items():
@@ -285,6 +293,8 @@ class EquipStats():
 					self.stats['equip'][slot]['augments'] = copy.deepcopy(stats['augments'])
 				if not EquipStats.addStats(self.stats, stats):
 					print("Cannot add stats for {}".format(name))
+			else:
+				print("{} - Slot {} - Item {} - id {} invalid".format(self.equipName, slot, name, itemId))
 		if removeEmpty:
 			self.stats = EquipStats.removeEmptyStats(self.stats)
 		return self.stats
@@ -322,7 +332,9 @@ class EquipStats():
 		return changedTraits
 
 	def diffStats(stats1, stats2, removeEmpty=True):
-		stats = {'attribute':{}, 'trait':[], 'conditions':{}}
+		stats = {'equipName':'Difference','attribute':{}, 'trait':[], 'conditions':{}}
+		if 'equipName' in stats2 and 'equipName' in stats1:
+			stats['equipName'] = '{} - {}'.format(stats2['equipName'],stats1['equipName'])
 		stats['attribute'] = EquipStats.diffAttribute(stats1, stats2)
 		stats['trait'] = EquipStats.diffTrait(stats1, stats2)
 		stats['active'] = EquipStats.diffTrait(stats1, stats2,'active')
@@ -361,12 +373,92 @@ def luaStruct(script):
 	lua_func = lua.eval('function() return '+script+'end')
 	return luaToPythonType(lua_func())
 
+def setsToList(sets, setList, path = ""):
+	equipSlots = ('main','sub','range','ammo','head','neck','left_ear''l.ear','ear1','right_ear','r.ear','ear2','body','hands','left_ring','l.ring','ring1','right_ring','r.ring','ring2','back','waist','legs','feet')
+	for k,v in sets.items():
+		if isinstance(v, dict) and len(v) > 0:
+			if len(path) > 0:
+				subpath = '_'.join([path,k.replace(' ','_')])
+			else:
+				subpath = k.replace(' ','_')
+			firstkey = next(iter(v))
+			if isinstance(firstkey, str) and firstkey.lower() in equipSlots:
+				equipSet = {}
+				for slot,item in v.items():
+					equipSet[slot] = item
+				setList[subpath] = equipSet
+			else:
+				setsToList(v, setList, subpath)
+	return setList
+
+def luaGearSwap(script):
+	lua = lupa.LuaRuntime(unpack_returned_tuples=True)
+	script += '''
+
+function get_slot_name(slot)
+	local equip_slots = {
+		main='main',
+		sub='sub',
+		range='range',
+		ranged='range',
+		ammo='ammo',
+		head='head',
+		neck='neck',
+		left_ear='left_ear',
+		ear1='left_ear',
+		lear='left_ear',
+		right_ear='right_ear',
+		ear2='right_ear',
+		rear='right_ear',
+		body='body',
+		hands='hands',
+		left_ring='left_ring',
+		ring1='left_ring',
+		lring='left_ring',
+		right_ring='right_ring',
+		ring2='right_ring',
+		rring='right_ring',
+		back='back',
+		waist='waist',
+		legs='legs',
+		feet='feet'
+	}
+	slot = slot:gsub("%.","")
+	slot = slot:lower()
+	return equip_slots[slot]
+end
+
+function set_combine(...)
+    local combineSets = {...}
+    gearSet = {}
+    for _, set in pairs(combineSets) do
+    	for slot,item in pairs(set) do
+    		equipSlot = get_slot_name(slot)
+    		if equipSlot ~= nil then
+    			gearSet[equipSlot] = item
+    		end
+    	end
+    end
+    return gearSet
+end
+
+sets = {}
+get_sets()
+return sets
+'''
+	results = lua.execute(script)
+	sets = luaToPythonType(results)
+	setList = setsToList(sets, {})
+	return setList
+
 parser = argparse.ArgumentParser(description='Parse Gearinfo Stats.')
 parser.add_argument('filenames',metavar='filename', type=str, nargs='*', help='A lua gearinfo structure file to parse')
 parser.add_argument('--demo', action='store_true', help='Generate output using demo data')
 parser.add_argument('--diff', action='store_true', help='Generate diff data comparing two files')
 parser.add_argument('--table', action='store_true', help='Generate in table form')
 parser.add_argument('--format',choices=['plain', 'simple', 'fancy_grid', 'html', 'pretty','mediawiki','github','tsv'],default='fancy_grid',help='Specify format of table')
+parser.add_argument('--gearswap', action='store_true', help='Input file is gearswap format (i.e. initialized in get_sets() and stored in sets)')
+parser.add_argument('--output', action='store', type=str, help='Output file to write the results')
 args = parser.parse_args()
 # print(args)
 statsList = []
@@ -379,20 +471,36 @@ if args.demo:
 	script = """
 	{main="Naegling",ammo="Aurgelmir Orb",head="Flam. Zucchetto +2",body="Dagon Breastplate",hands="Pel. Vambraces +2",legs="Peltast's Cuissots +2",feet="Flam. Gambieras +2",neck="Anu Torque",waist="Sailfi Belt +1",ear1="Telos Earring",ear2="Sherida Earring",ring1="Niqmaddu Ring",ring2="Flamma Ring",back={ name="Brigantia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}}
 	"""
-	statsList.append({'filename':'demo1', 'charStats':EquipStats(equip=luaStruct(script))})
+	statsList.append(EquipStats(equip=luaStruct(script), equipName='demo1'))
 	script = """
 	{ammo="Oshasha's Treatise",neck="Fotia Gorget",waist="Fotia Belt",ear1="Moonshade Earring",ear2="Thrud Earring",ring1="Niqmaddu Ring",ring2="Rufescent Ring",head="Blistering Sallet +1",body="Hjarrandi Breastplate",hands="Pel. Vambraces +2",legs="Peltast's Cuissots +2",feet="Sulev. Leggings +2",back={ name="Brigantia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}}
 	"""
-	statsList.append({'filename':'demo2', 'charStats':EquipStats(equip=luaStruct(script))})
+	statsList.append(EquipStats(equip=luaStruct(script), equipName='demo1'))
 elif len(args.filenames) > 0:
 	for filename in args.filenames:
-		with open(filename,"r") as file:
-			result = luaStruct(file.read())
-			if isinstance(result,(list, tuple)):
-				for idx, instance in enumerate(result):
-					statsList.append({'filename':filename+":"+str(idx+1), 'charStats':EquipStats(equip=instance)})
-			if isinstance(result,dict):
-				statsList.append({'filename':filename, 'charStats':EquipStats(equip=result)})
+		with open(filename,"r", encoding='utf-8') as file:
+			result = file.read()
+			if args.gearswap:
+				path = os.path.dirname(filename)
+				match = re.findall('require \"?([^\n\"]+)\"?', result)
+				if match:
+					for requiredFilename in match:
+						searchString = 'require \"?'+re.escape(requiredFilename)+'\"?'
+						with open(path+'\\'+requiredFilename,"r", encoding='utf-8') as reqFile:
+							reqScript = reqFile.read()
+							result = re.sub(searchString, reqScript, result)
+				result = luaGearSwap(result)
+				# print(json.dumps(result, indent=4))
+				# print("Found {} sets in {}".format(len(result), filename))
+				for name, equipSet in result.items():
+					statsList.append(EquipStats(equip=equipSet, equipName=os.path.basename(filename)+":"+name))
+			else:
+				result = luaStruct(result)
+				if isinstance(result,(list, tuple)):
+					for idx, instance in enumerate(result):
+						statsList.append(EquipStats(equip=instance, equipName=os.path.basename(filename)+":"+str(idx+1)))
+				if isinstance(result,dict):
+					statsList.append(EquipStats(equip=result, equipName=os.path.basename(filename)))
 else:
 	parser.print_help()
 	print("Please supply at least one filename or use --demo")
@@ -409,6 +517,8 @@ else:
 
 def statsToTable(stats):
 	table = {}
+	if 'equipName' in stats:
+		table['equipName'] = [stats['equipName']]
 	if 'equip' in stats:
 		table['equip'] = {}
 		for slot, item in stats['equip'].items():
@@ -498,11 +608,13 @@ def mergeTable(mainTable, table, length):
 	return mainTable
 
 def mergeStatsList(statsList):
-	statsTable = {'equip':{},'base':{},'conditions':{}}
+	statsTable = {'equipName':[], 'equip':{},'base':{},'conditions':{}}
 	length = 0
 	for stat in statsList:
 		length += 1
-		mergeTable(statsTable['base'], statsToTable(stat), length)
+		setTable = statsToTable(stat)
+		mergeTableEntry(statsTable, setTable, 'equipName', length)
+		mergeTable(statsTable['base'], setTable, length)
 		if 'conditions' in stat:
 			for condition, conditionStats in stat['conditions'].items():
 				if not condition in statsTable['conditions']:
@@ -514,6 +626,10 @@ def mergeStatsList(statsList):
 					mergeTable(statsTable['conditions'][condition], {}, length)
 	results = []
 	firstCol = ''
+	if 'equipName' in statsTable:
+		entry = ['', 'EquipName']
+		entry.extend(statsTable['equipName'])
+		results.append(entry)
 	if 'equip' in statsTable['base']:
 		firstCol = 'Gear'
 		for key, value in statsTable['base']['equip'].items():
@@ -550,23 +666,26 @@ def mergeStatsList(statsList):
 			results.append(entry)
 	return results
 
+output = ''
 if args.table:
-	headers = ['Stats', 'EquipSet']
 	equipList = []
 	for stat in statsList:
-		headers.append(stat['filename'])
-		equipList.append(stat['charStats'].stats)
+		equipList.append(stat.stats)
 	if diffStats:
-		headers.append('Difference')
 		equipList.append(diffStats)
 	results = mergeStatsList(equipList)
-	results.insert(0, headers)
-	print(tabulate.tabulate(results, headers='firstrow', tablefmt=args.format,maxcolwidths=[21,21]))
+	output += tabulate.tabulate(results, headers='firstrow', tablefmt=args.format)
 else:
 	line = '-'*80
 	for stat in statsList:
-		print('{}\nStats for Equipset {}\n{}'.format(line, stat['filename'], line))
-		print(json.dumps(stat['charStats'].stats, indent=4))
+		output += '{}\nStats for Equipset {}\n{}'.format(line, stat.equipName, line)
+		output += json.dumps(stat.stats, indent=4)
 	if args.diff:
-		print('{}\nDifference between {} and {}\n{}'.format(line, statsList[0]['filename'], statsList[1]['filename'], line))
-		print(json.dumps(diffStats, indent=4))
+		output += '{}\nDifference between {} and {}\n{}'.format(line, statsList[0].equipName, statsList[1].equipName, line)
+		output += json.dumps(diffStats, indent=4)
+
+if args.output:
+	with open(args.output,"w", encoding='utf-8') as file:
+		file.write(output)
+else:
+	print(output)
