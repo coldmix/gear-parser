@@ -1,4 +1,5 @@
 import argparse, copy, json, lupa, os, re, tabulate
+from functools import partial
 
 class ReplaceKey():
 	def __init__(self, dictMap):
@@ -370,11 +371,11 @@ parser = argparse.ArgumentParser(description='Parse Gearinfo Stats.')
 parser.add_argument('filenames',metavar='filename', type=str, nargs='*', help='A lua gearinfo structure file to parse')
 parser.add_argument('--demo', action='store_true', help='Generate output using demo data')
 parser.add_argument('--diff', action='store_true', help='Generate diff data comparing two files')
+parser.add_argument('--gearswap', action='store_true', help='Input file is gearswap format, i.e. sets initialized in get_sets()')
 parser.add_argument('--debug', action='store_true', help='Export the lua script to debug.log to line errors investigation')
 parser.add_argument('--table', action='store_true', help='Generate in table form')
-parser.add_argument('--format',choices=['plain', 'simple', 'fancy_grid', 'html', 'pretty','mediawiki','github','tsv'],default='fancy_grid',help='Specify format of table')
-parser.add_argument('--gearswap', action='store_true', help='Input file is gearswap format (i.e. initialized in get_sets() and stored in sets)')
 parser.add_argument('--output', action='store', type=str, help='Output file to write the results')
+parser.add_argument('--format',choices=['plain','simple','fancy_grid','html','pretty','mediawiki','github','tsv','htmlcss'], default='fancy_grid', help='Specify format of table')
 args = parser.parse_args()
 
 # print(args)
@@ -681,6 +682,26 @@ def mergeStatsList(statsList):
 			results.append(entry)
 	return results
 
+def my_html_row_with_attrs(celltag, cell_values, colwidths, colaligns):
+	alignment = {
+		"left":    '',
+		"right":   ' style="text-align: right;"',
+		"center":  ' style="text-align: center;"',
+		"decimal": ' style="text-align: right;"' }
+	values_with_attrs =\
+		["<{0}{1} class=\"my-cell\">{2}</{0}>".format(celltag, alignment.get(a, ''), c)
+			for c, a in zip(cell_values, colaligns)]
+	return "<tr class=\"my-row\">" + "".join(values_with_attrs).rstrip() + "</tr>"
+
+htmlCssFormat = tabulate.TableFormat(
+	lineabove=tabulate.Line("<table class=\"my-table\">", "", "", ""),
+	linebelowheader=None,
+	linebetweenrows=None,
+	linebelow=tabulate.Line("</table>", "", "", ""),
+	headerrow=partial(my_html_row_with_attrs, "th"),
+	datarow=partial(my_html_row_with_attrs, "td"),
+	padding=0, with_header_hide=None)
+
 output = ''
 if args.table:
 	equipList = []
@@ -689,7 +710,10 @@ if args.table:
 	if diffStats:
 		equipList.append(diffStats)
 	results = mergeStatsList(equipList)
-	output += tabulate.tabulate(results, headers='firstrow', tablefmt=args.format)
+	if args.format == 'htmlcss':
+		output += tabulate.tabulate(results, headers='firstrow', tablefmt=htmlCssFormat)
+	else:
+		output += tabulate.tabulate(results, headers='firstrow', tablefmt=args.format)
 else:
 	line = '-'*80
 	for stat in statsList:
