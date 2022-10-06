@@ -74,7 +74,7 @@ class EquipStats():
 		'Evasion':["Eva."],
 		'Magic Evasion':["Mag. Eva."],
 		'Magic Def. Bonus':['M. Def. B.'],
-		'Range':['Ranged']
+		'Range':['Ranged'],
 	})
 	cleanup = str.maketrans({'"':None, '\n':' '})
 
@@ -97,10 +97,11 @@ class EquipStats():
 				if isinstance(value,list):
 					# Use the maximum value
 					value = value[-1]
-				if not key in attr:
-					attr[key] = value
+				attrKey = next((attrKey for attrKey in attr.keys() if attrKey.lower() == key.lower()), None)
+				if attrKey in attr:
+					attr[attrKey] += value
 				else:
-					attr[key] += value
+					attr[key] = value
 		return attr
 
 	def addTrait(stats1, stats2, key='trait'):
@@ -305,10 +306,11 @@ class EquipStats():
 				changedAttr[attr] = value
 		if 'attribute' in stats1:
 			for attr, value in stats1['attribute'].items():
-				if not attr in changedAttr:
-					changedAttr[attr] = -value
+				attrKey = next((attrKey for attrKey in changedAttr.keys() if attrKey.lower() == attr.lower()), None)
+				if attrKey in changedAttr:
+					changedAttr[attrKey] -= value
 				else:
-					changedAttr[attr] -= value
+					changedAttr[attr] = -value
 		return changedAttr
 
 	def diffTrait(stats1, stats2, key='trait'):
@@ -580,8 +582,9 @@ def statsToTable(stats):
 def mergeTableEntry(mainTable, table, key, length):
 	# debugTable = copy.deepcopy(mainTable)
 	if key in mainTable:
-		if key in table:
-			mainTable[key].extend(table[key])
+		attrKey = next((attrKey for attrKey in table.keys() if attrKey.lower() == key.lower()), None)
+		if attrKey in table:
+			mainTable[key].extend(table[attrKey])
 		else:
 			mainTable[key].append('')
 	elif key in table:
