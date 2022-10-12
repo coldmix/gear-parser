@@ -48,20 +48,23 @@ class ReplaceKey():
 replaceKey = ReplaceKey({
 				'Double Attack %':["Dbl.Atk."],
 				'Quadruple Attack %':["Quad Attack %"],
+				'Accuracy':["Acc."],
+				'Attack':["Atk."],
+				'Ranged Accuracy':["Rng. Acc."],
+				'Ranged Attack':["Rng. Atk."],
+				'Magic Attack Bonus':["M. Atk. Bonus", "Magic Atk. Bonus"],
+				'Magic Accuracy':['Mag. Acc.','Mag. Acc'],
+				'Magic Damage':['Mag. Dmg.'],
+				'Evasion':["Eva."],
+				'Magic Evasion':["Mag. Eva."],
+				'Magic Defense Bonus':['M. Def. B.','Magic Def. Bonus'],
+				'Magic':["Mag."],
 				'Left Ear':['ear1','l.ear','left_ear'],
 				'Right Ear':['ear2','r.ear','right_ear'],
 				'Left Ring':['ring1','l.ring','left_ring'],
 				'Right Ring':['ring2','r.ring','right_ring'],
 				'Main':['Main Hand'],
-				'Accuracy':["Acc."],
-				'Attack':["Atk."],
-				'Ranged Accuracy':["Rng. Acc."],
-				'Ranged Attack':["Rng. Atk."],
-				'Magic Atk. Bonus':["M. Atk. Bonus"],
-				'Magic Accuracy':['Mag. Acc.'],
-				'Evasion':["Eva."],
-				'Magic Evasion':["Mag. Eva."],
-				'Magic Def. Bonus':['M. Def. B.'],
+				'Range':['Ranged'],
 			})
 
 parser = argparse.ArgumentParser(description='Extract Items Info')
@@ -208,7 +211,11 @@ for key, item in items.items():
 										attribute[name] = value
 							elif attrFound:
 								# print('{} - {}'.format(item['name'],attr))
-								trait.append(match[8].strip().translate(cleanup))
+								name = match[8].strip().translate(cleanup)
+								if isinstance(condition, str) and (condition.lower() == 'set'):
+									attribute[name] = 1
+								else:
+									trait.append(name)
 	itemsList.append(item)
 
 with open("items.json", mode="wt", encoding='utf-8') as file:

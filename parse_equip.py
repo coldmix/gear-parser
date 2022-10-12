@@ -52,28 +52,32 @@ class EquipStats():
 	defaultAttributes = {
 		"DMG":0,"Delay":0,"Magic Damage":0,
 		"DEF":0,"HP":0,"MP":0,"STR":0,"DEX":0,"VIT":0,"AGI":0,"INT":0,"MND":0,"CHR":0,
-		"Haste %":0,"Accuracy":0,"Attack":0,"Ranged Accuracy":0,"Ranged Attack":0,"Magic Accuracy":0,"Magic Atk. Bonus":0,
-		"Evasion":0,"Magic Evasion":0,"Magic Def. Bonus":0,
+		"Haste %":0,"Accuracy":0,"Attack":0,"Ranged Accuracy":0,"Ranged Attack":0,"Magic Accuracy":0,"Magic Attack Bonus":0,
+		"Evasion":0,"Magic Evasion":0,"Magic Defense Bonus":0,
 		"Damage taken %":0,"Physical damage taken %":0,"Magic damage taken %":0,
 		"Double Attack %":0,"Triple Attack %":0,"Quadruple Attack %":0,
 	}
 	replaceKey = ReplaceKey({
 		'Double Attack %':["Dbl.Atk."],
 		'Quadruple Attack %':["Quad Attack %"],
+		'Accuracy':["Acc."],
+		'Attack':["Atk."],
+		'Ranged Accuracy':["Rng. Acc."],
+		'Ranged Attack':["Rng. Atk."],
+		'Magic Attack Bonus':["M. Atk. Bonus", "Magic Atk. Bonus", "Mag.Atk.Bns."],
+		'Magic Accuracy':['Mag. Acc.','Mag. Acc'],
+		'Magic Damage':['Mag. Dmg.'],
+		'Evasion':["Eva."],
+		'Magic Evasion':["Mag. Eva."],
+		'Magic Defense Bonus':['M. Def. B.','Magic Def. Bonus'],
+		'Magic ':["Mag."],
+		'Attack ':["Atk."],
+		'Bonus ':["Bns."],
 		'Left Ear':['ear1','l.ear','left_ear'],
 		'Right Ear':['ear2','r.ear','right_ear'],
 		'Left Ring':['ring1','l.ring','left_ring'],
 		'Right Ring':['ring2','r.ring','right_ring'],
 		'Main':['Main Hand'],
-		'Accuracy':["Acc."],
-		'Attack':["Atk."],
-		'Ranged Accuracy':["Rng. Acc."],
-		'Ranged Attack':["Rng. Atk."],
-		'Magic Atk. Bonus':["M. Atk. Bonus"],
-		'Magic Accuracy':['Mag. Acc.'],
-		'Evasion':["Eva."],
-		'Magic Evasion':["Mag. Eva."],
-		'Magic Def. Bonus':['M. Def. B.'],
 		'Range':['Ranged'],
 	})
 	cleanup = str.maketrans({'"':None, '\n':' '})
@@ -327,7 +331,7 @@ class EquipStats():
 				for trait in stats2[key]:
 					changedTraits.append('+'+trait)
 		if key in stats1:
-			if not 'trait' in stats2:
+			if not key in stats2:
 				for trait in stats1[key]:
 					changedTraits.append('-'+trait)
 		return changedTraits
